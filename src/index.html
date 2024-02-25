@@ -7,61 +7,59 @@
     <title>Anna Ishikawa's portfolio</title>
   </head>
   <body class="h-screen bg-red-gray">
-    <header class="lg:flex lg:justify-center">
-      <div class="w-full lg:w-10/12">
-        <!-- SP用ヘッダー -->
-        <nav class="flex h-20 w-full items-center bg-red-gray p-6 lg:hidden">
-          <button id="hamburger" type="button" class="fixed right-6 z-10">
-            <img
-              id="hamburger_svg"
-              src="./public/images/icons/hamburger.svg"
-              alt="スマホ用メニュー"
-            />
-            <img
-              id="close_svg"
-              class="hidden"
-              src="./public/images/icons/close.svg"
-              alt="スマホ用メニュー閉じるボタン"
-            />
-          </button>
-          <ul
-            id="sp_menu"
-            class="fixed left-0 top-0 z-0 h-full w-full translate-x-full bg-light-navy pt-20 text-center font-jost text-xl font-bold text-white transition-all ease-linear"
-          >
-            <li class="p-6">
-              <a class="underline decoration-1 underline-offset-8" href=""
-                >Home</a
-              >
-            </li>
-            <li class="p-6">
-              <a class="underline decoration-1 underline-offset-8" href=""
-                >About</a
-              >
-            </li>
-            <li class="p-6">
-              <a class="underline decoration-1 underline-offset-8" href=""
-                >Works</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <!-- SP用ヘッダー -->
-        <!-- PC用ヘッダー -->
-        <div class="top-0 z-0 hidden w-full bg-red-gray lg:block">
-          <nav class="flex h-20 flex-col items-start justify-center">
-            <ul class="flex font-jost text-xl font-medium text-light-navy">
-              <li><a href="">Home</a></li>
-              <li class="ml-3"><a href="">About</a></li>
-              <li class="ml-3"><a href="">Works</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+    <header class="fixed w-full bg-red-gray lg:flex lg:justify-center">
+      <!-- SP用ヘッダー -->
+      <nav class="h-20 w-full items-center bg-red-gray p-4 lg:hidden">
+        <button id="hamburger" type="button" class="fixed right-6 z-10">
+          <img
+            id="hamburger_svg"
+            src="./public/images/icons/hamburger.svg"
+            alt="スマホ用メニュー"
+          />
+          <img
+            id="close_svg"
+            class="hidden"
+            src="./public/images/icons/close.svg"
+            alt="スマホ用メニュー閉じるボタン"
+          />
+        </button>
+        <ul
+          id="sp_menu"
+          class="fixed left-0 top-0 z-0 h-full w-full translate-x-full bg-light-navy pt-20 text-center font-jost text-xl font-bold text-white transition-all ease-linear"
+        >
+          <li class="p-6">
+            <a class="underline decoration-1 underline-offset-8" href=""
+              >Home</a
+            >
+          </li>
+          <li class="p-6">
+            <a class="underline decoration-1 underline-offset-8" href=""
+              >About</a
+            >
+          </li>
+          <li class="p-6">
+            <a class="underline decoration-1 underline-offset-8" href=""
+              >Works</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- SP用ヘッダー -->
+      <!-- PC用ヘッダー -->
+      <nav
+        class="hidden h-20 w-full flex-col items-start justify-center lg:flex lg:w-10/12"
+      >
+        <ul class="flex font-jost text-xl font-medium text-light-navy">
+          <li class="z-50 hover:text-red-600"><a href="">Home</a></li>
+          <li class="ml-3 hover:text-red-600"><a href="">About</a></li>
+          <li class="ml-3 hover:text-red-600"><a href="">Works</a></li>
+        </ul>
+      </nav>
       <!-- PC用ヘッダー -->
     </header>
     <main>
       <!-- メインビジュアル -->
-      <div class="mb-10 lg:mb-0 lg:h-72 xl:h-96">
+      <div class="mb-10 lg:mb-20 lg:h-52 xl:h-60 2xl:h-96">
         <img
           src="./public/images/main_visual_sp.png"
           alt="スマホ用メインビジュアル"
@@ -70,10 +68,9 @@
         <img
           src="./public/images/main_visual.png"
           alt="PC用メインビジュアル"
-          class="left-0 top-0 z-50 h-0 w-full lg:absolute lg:h-auto"
+          class="left-0 top-0 z-30 w-full lg:absolute lg:h-auto"
         />
       </div>
-      <div class="hidden h-20 2xl:block"></div>
       <!-- メインビジュアル -->
       <!-- About -->
       <div
@@ -115,24 +112,24 @@
       <!-- Works -->
       <script src="./public/js/hamburger.js"></script>
     </main>
-    <footer class="mt-10 flex lg:justify-end justify-center">
+    <footer class="mt-10 flex justify-center lg:justify-end">
       <div
-        class="hidden lg:flex w-11/12 justify-between rounded-tl-xl bg-white px-8 py-4 lg:w-4/6 lg:px-20 lg:py-10"
+        class="hidden w-11/12 justify-between rounded-tl-xl bg-white px-8 py-4 lg:flex lg:w-4/6 lg:px-20 lg:py-10"
       >
-        <nav class=" flex-col items-start justify-center flex">
+        <nav class="flex flex-col items-start justify-center">
           <ul class="flex font-jost text-xl font-medium text-light-navy">
-            <li><a href="">Home</a></li>
-            <li class="ml-3"><a href="">About</a></li>
-            <li class="ml-3"><a href="">Works</a></li>
+            <li><a class="hover:text-red-600" href="">Home</a></li>
+            <li class="ml-3 hover:text-red-600"><a href="">About</a></li>
+            <li class="ml-3 hover:text-red-600"><a href="">Works</a></li>
           </ul>
         </nav>
         <p class="text-xs text-gray-500">
           ©Anna ishikawa Portfolio Site All rights reserved.
         </p>
       </div>
-      <p class="lg:hidden text-xs text-gray-500 mb-4">
-          ©Anna ishikawa Portfolio Site All rights reserved.
-        </p>
+      <p class="mb-4 text-xs text-gray-500 lg:hidden">
+        ©Anna ishikawa Portfolio Site All rights reserved.
+      </p>
     </footer>
   </body>
 </html>
