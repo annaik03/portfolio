@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "dbaeumer.vscode-eslint",
+    "mhutchie.git-graph",
+    "bradgashler.htmltagwrap",
+    "oderwat.indent-rainbow",
+    "ritwickdey.liveserver",
+    "yzhang.markdown-all-in-one",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss"
+  ]
+}
