@@ -6,5 +6,40 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Anna Ishikawa's portfolio</title>
   </head>
-  <body></body>
+  <body class="bg-red-gray lg:flex lg:justify-center h-screen">
+    <header class="lg:w-10/12 w-full">
+      <!-- SP用ヘッダー -->
+      <nav class="bg-red-gray lg:hidden w-full flex h-20 items-center  p-6" >
+          <button id="hamburger" type="button" class="fixed right-6 z-10">
+            <img id="hamburger_svg" src="./public/images/icons/hamburger.svg" alt="スマホ用メニュー">
+            <img id="close_svg" class="hidden" src="./public/images/icons/close.svg" alt="スマホ用メニュー閉じるボタン">
+          </button>
+          <ul id="sp_menu" class="fixed top-0 left-0 pt-20 z-0 h-full w-full translate-x-full bg-light-navy text-center text-xl font-jost  font-bold text-white transition-all ease-linear">
+            <li class="p-6 "><a class="underline underline-offset-8 decoration-1" href="">Home</a></li>
+            <li class="p-6 "><a class="underline underline-offset-8 decoration-1" href="">About</a></li>
+            <li class="p-6 "><a class="underline underline-offset-8 decoration-1" href="">Works</li>
+          </ul>
+      </nav>
+      <!-- SP用ヘッダー -->
+      <!-- PC用ヘッダー -->
+      <div class="lg:block hidden w-full bg-red-gray z-0 top-0">
+        <nav class="flex flex-col justify-center items-start h-20">
+          <ul class="flex font-jost font-medium text-xl text-light-navy">
+            <li><a href="">Home</a></li>
+            <li class="ml-3"><a href="">About</a></li>
+            <li class="ml-3"><a href="">Works</li>
+          </ul>
+        </nav>
+      </div>
+      <!-- PC用ヘッダー -->
+    </header>
+    <main>
+      <div>
+        <img src="./public/images/main_visual_sp.png" alt="スマホ用メインビジュアル" class="lg:hidden w-full">
+        <img src="./public/images/main_visual.png" alt="PC用メインビジュアル" class="lg:absolute h-0 lg:h-auto top-0 left-0 w-full z-50">
+      </div>
+      <script src="./public/js/hamburger.js"></script>
+    </main>
+    <footer></footer>
+  </body>
 </html>
