@@ -1,6 +1,6 @@
 const hamburgerButton = document.getElementById("hamburger");
 const hamburgerSvg = document.getElementById("hamburger_svg");
-const closeSvg = document.getElementById("close_svg")
+const closeSvg = document.getElementById("close_svg");
 const spMenu = document.getElementById("sp_menu");
 
 hamburgerButton.addEventListener("click", (_event) => {

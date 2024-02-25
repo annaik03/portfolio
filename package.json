@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prettier-fix": "npx prettier . --write",
+    "prettier-check": "npx prettier . --check",
     "build-tailwind": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },
   "keywords": [],
