@@ -61,7 +61,7 @@
     </header>
     <main>
       <!-- メインビジュアル -->
-      <div class="lg:h-72 xl:h-96 mb-10 lg:mb-0">
+      <div class="mb-10 lg:mb-0 lg:h-72 xl:h-96">
         <img
           src="./public/images/main_visual_sp.png"
           alt="スマホ用メインビジュアル"
@@ -73,17 +73,46 @@
           class="left-0 top-0 z-50 h-0 w-full lg:absolute lg:h-auto"
         />
       </div>
-      <div class="hidden 2xl:block h-20"></div>
+      <div class="hidden h-20 2xl:block"></div>
       <!-- メインビジュアル -->
       <!-- About -->
-      <div class="lg:w-4/6 rounded-br-xl rounded-tr-xl bg-white lg:px-40 lg:py-8 px-8 w-11/12 py-4">
+      <div
+        class="w-11/12 rounded-br-xl rounded-tr-xl bg-white px-8 py-4 lg:w-4/6 lg:px-40 lg:py-8"
+      >
         <dl class="flex items-center">
           <dt class="font-jost text-3xl">Anna Ishikawa</dt>
           <dd class="ml-8 font-jost text-gray-400">WEB DESIGNER</dd>
         </dl>
-        <p class="font-jost mt-4">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        <p class="mt-4">
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        </p>
       </div>
       <!-- About -->
+      <!-- Works -->
+      <div class="lg:flex lg:justify-center">
+        <div class="w-full flex-row lg:w-10/12">
+          <h1 class="flex justify-center py-8 font-jost text-3xl font-bold">
+            Works
+          </h1>
+          <div class="flex flex-wrap justify-between">
+            <div class="h-96 lg:w-1/2 w-full bg-red-500"></div>
+            <div class="h-96 lg:w-1/2 w-full bg-blue-500"></div>
+            <div class="h-96 lg:w-1/2 w-full bg-blue-500"></div>
+            <div class="h-96 lg:w-1/2 w-full bg-red-500"></div>
+            <div class="h-96 lg:w-1/2 w-full bg-red-500"></div>
+            <div class="h-96 lg:w-1/2 w-full bg-blue-500"></div>
+          </div>
+          <h1 class="flex justify-center py-8 font-jost text-3xl font-medium">
+            Banner Design
+          </h1>
+          <div class="flex flex-wrap justify-between">
+            <div class="h-96 lg:w-4/12 w-full bg-red-500"></div>
+            <div class="h-96 lg:w-4/12 w-full bg-blue-500"></div>
+            <div class="h-96 lg:w-4/12 w-full bg-red-500"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Works -->
       <script src="./public/js/hamburger.js"></script>
     </main>
     <footer></footer>
