@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="223" height="155" viewBox="0 0 223 155">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_69" data-name="長方形 69" width="74.052" height="74.052" fill="#002b5c"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="長方形_70" data-name="長方形 70" width="35.493" height="39.175" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_82" data-name="グループ 82" transform="translate(-269 -821)">
+    <text id="すずき歯科医院" transform="translate(269 940)" fill="#002b5c" font-size="32" font-family="YuGothic-Bold, Yu Gothic" font-weight="700"><tspan x="0" y="0">すずき歯科医院</tspan></text>
+    <text id="suzuki_dental_clinic" data-name="suzuki dental clinic" transform="translate(274 971)" fill="#002b5c" font-size="18" font-family="Roboto-Regular, Roboto" letter-spacing="0.181em"><tspan x="0" y="0">suzuki dental clinic</tspan></text>
+    <g id="グループ_78" data-name="グループ 78" transform="translate(345.001 821)">
+      <g id="グループ_77" data-name="グループ 77" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <path id="パス_86" data-name="パス 86" d="M74.052,37.025A37.026,37.026,0,1,1,37.026,0,37.026,37.026,0,0,1,74.052,37.025" transform="translate(0 0)" fill="#002b5c"/>
+      </g>
+    </g>
+    <g id="グループ_80" data-name="グループ 80" transform="translate(363.765 838.47)">
+      <g id="グループ_79" data-name="グループ 79" transform="translate(0 0)" clip-path="url(#clip-path-2)">
+        <path id="パス_87" data-name="パス 87" d="M24.49,65.2c-2.425,0-3.264-2.65-3.938-4.78-.461-1.455-.983-3.1-1.76-3.1-.566,0-1.133,1.688-1.547,2.92C16.5,62.445,15.577,65.2,13.106,65.2c-3.124,0-7.813-11.341-9.86-19.18l1.688-.441A70.672,70.672,0,0,0,9.45,58.011c2.068,4.259,3.36,5.374,3.683,5.444,1.1,0,1.716-1.566,2.459-3.776.679-2.02,1.381-4.109,3.2-4.109,2.054,0,2.782,2.3,3.422,4.321.661,2.086,1.21,3.562,2.275,3.562,1.415,0,5.377-7.185,9.021-17.882l1.651.562c-.016.047-1.608,4.706-3.616,9.3-3.778,8.65-5.756,9.76-7.056,9.76" transform="translate(-1.854 -26.022)" fill="#fff"/>
+        <path id="パス_88" data-name="パス 88" d="M.877,17.9C-.917,9.485.035,4.166,3.788,1.641,8.064-1.236,12.234.047,14.47,2.595,15.53,3.8,16.663,5.285,17.758,6.72c2.153,2.819,4.379,5.735,6.188,6.808,3.408,2.024,6.773,1.006,8.075-.363l1.264,1.2a7.165,7.165,0,0,1-4.264,1.968,9.3,9.3,0,0,1-5.965-1.307c-2.1-1.247-4.43-4.3-6.684-7.249C15.244,6.3,14.179,4.908,13.159,3.745c-1.606-1.829-4.768-3.1-8.4-.657C1.667,5.171.954,9.9,2.583,17.537Z" transform="translate(0 0)" fill="#fff"/>
+        <path id="パス_89" data-name="パス 89" d="M61.869,11.3l-1.7-.41c.243-1.005,1.232-6.131-3.207-8.322-1.92-.948-5.045-1.312-9.027,2.338L46.76,3.619C50.435.252,54.333-.677,57.738,1a7.662,7.662,0,0,1,4.127,5,11.012,11.012,0,0,1,0,5.3" transform="translate(-26.701 -0.106)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
