@@ -7,7 +7,7 @@ body{
     font-family: 'Lato',"游ゴシック体","游ゴシック", "Yu Gothic", sans-serif;
 	font-weight:500;
 	color: #333333;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 }
 img{
 	max-width: 100%;
@@ -31,7 +31,7 @@ h2{
 	font-weight: 700;
 }
 .h2_subtitle{
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	font-size: 1.4rem;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -39,6 +39,14 @@ h2{
 p{
 	line-height: 1.7;
 	margin:0;
+}
+.center{
+	text-align: center;
+}
+.text_space{
+	margin-bottom: 15px;
+}
+.small_text{
 	font-size: 1.4rem;
 }
 
@@ -79,7 +87,10 @@ p{
 }
 .tel_number{
 	font-size: 2.0rem;
+	font-weight: bold;
+	color: #002B5C;
 }
+
 
 /* メインビジュアル */
 .mainvisual {
@@ -102,11 +113,12 @@ p{
 	width: auto;
 }
 .about_text{
-	margin-right: 100px;
+	
 	max-width: 690px;
 }
 .flex_item{
 	margin-left: 10%;
+	margin-right: 100px;
 }
 
 /* menu */
@@ -114,32 +126,57 @@ p{
 	display: flex;
 	justify-content: center;
 }
+.menu_inner > div:nth-child(1){	
+	margin-right: 50px;
+}
+.menu_inner > div:nth-child(2){	
+	margin-right: 50px;
+}
+
 .menu_bg{
 	max-width: 80%;
 	background-color: #E1EAF3;
 	text-align: center;
 	margin: 0 auto 120px;
 	border-radius: 235px;
-	padding: 20px;
+	padding: 20px 0 80px;
 }
 .menu_icon{
 	height: 130px;
 	width: auto;
 }
-.menu_icon:nth-of-type(1),.menu_icon:nth-of-type(2),.menu_icon:nth-of-type(4),.menu_icon:nth-of-type(5){
- margin: 0 50px 0 0;
-}
 .menu_link{
-	font-size: 2rem;
+	font-size: 1.8rem;
 	font-weight: bold;
 }
 
 /* docter */
 .docter_inner{
 	display: flex;
+	margin: 0 0 120px;
+}
+.docter_img{
+	max-height: 400px;
+	width: auto;
+	margin-right: 100px;
+}
+.docter_greeting{
+	margin-right: 10%;
+}
+.docter_name{
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: #002B5C;
+	margin-bottom: 10px;
 }
 
 /* footer */
 .footer_bg{
 	background-color: #E1EAF3;
+	display: flex;
+	justify-content: center;
+	padding: 80px 10% 80px;
+}
+.footer_info{
+	margin-right: 100px;
 }
