@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+html{
+	font-size: 62.5%;
+}
+body{
+    font-family: 'Lato',"游ゴシック体","游ゴシック", "Yu Gothic", sans-serif;
+	font-weight:500;
+	color: #333333;
+	font-size: 1.4rem;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+a{
+	text-decoration: none;
+	color: #333333;
+}
+ul,
+li{
+	list-style: none;
+}
+h2{
+	color: #002B5C;
+	font-size: 3.0rem;
+}
+.h2_title{
+	text-align: left;
+	font-size: 3rem;
+	font-weight: 700;
+}
+.h2_subtitle{
+	margin-bottom: 10px;
+	font-size: 1.4rem;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+p{
+	line-height: 1.7;
+	margin:0;
+	font-size: 1.4rem;
+}
+
+/* ヘッダー */
+.header{
+	background-color: #ffffff;
+	width: 100%;
+	height: 90px;
+}
+.header_inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+}
+.header_logo{
+	width: 230px;
+	background-color: #E1EAF3;
+	opacity: 90%;
+	padding: 10px;
+}
+.header_nav{
+	display: flex;
+}
+.header_nav_items{
+	display: flex;
+	flex-direction: row;
+    justify-content: end;
+}
+.header_nav li{
+	padding-left: 10px;
+}
+.header_tel{
+	display: flex;
+	flex-flow: column;
+}
+.tel_icon{
+	width: 16px;
+}
+.tel_number{
+	font-size: 2.0rem;
+}
+
+/* メインビジュアル */
+.mainvisual {
+    min-height: 100vh;
+    max-width: 100%;
+    background-image: url(/src/dentist/img/main_img.png);
+	background-size: cover;
+    background-position: center;
+	margin: 0 0 120px;
+}
+
+/* about */
+.about_inner{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 120px;
+}
+.about_img{
+	max-height: 100vh;
+	width: auto;
+}
+.about_text{
+	margin-right: 100px;
+	max-width: 690px;
+}
+.flex_item{
+	margin-left: 10%;
+}
+
+/* menu */
+.menu_inner{
+	display: flex;
+	justify-content: center;
+}
+.menu_bg{
+	max-width: 80%;
+	background-color: #E1EAF3;
+	text-align: center;
+	margin: 0 auto 120px;
+	border-radius: 235px;
+	padding: 20px;
+}
+.menu_icon{
+	height: 130px;
+	width: auto;
+}
+.menu_icon:nth-of-type(1),.menu_icon:nth-of-type(2),.menu_icon:nth-of-type(4),.menu_icon:nth-of-type(5){
+ margin: 0 50px 0 0;
+}
+.menu_link{
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+/* docter */
+.docter_inner{
+	display: flex;
+}
+
+/* footer */
+.footer_bg{
+	background-color: #E1EAF3;
+}

@@ -1,108 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="すずき歯科医院は、〇〇市にある歯医者です。患者様それぞれに合った治療方法を提案し、歯の健康を維持します。">
+    <!-- デバイスによって画面幅を最適化 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="/src/dentist/css/normalize.css">
+    <link rel="stylesheet" href="/src/dentist/css/style.css">
+    <!-- Googleフォント読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>すずき歯科医院</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <!-- PC用ヘッダー -->
-        <h1>
-            <a href=""><img src="/src/dentist/img/logo.svg" alt="すずき歯科医院のロゴ画像"></a>
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="">logo</a></li>
-                <li><a href="">初めての方へ</a></li>
-                <li><a href="">診療案内</a></li>
-                <li><a href="">治療費について</a></li>
-                <li><a href="">医師紹介</a></li>
-                <li><a href="">よくある質問</a></li>
-                <li><a href="">アクセス</a></li>
-            </ul>
-        </nav>
-        <!-- PC用ヘッダー -->
+        <div class="header_inner">
+            <h1 class="header_logo">
+                <a href="/"><img src="/src/dentist/img/logo.svg" alt="すずき歯科医院"></a>
+            </h1>
+            <div class="header_nav">
+                <nav>
+                    <ul class="header_nav_items">
+                        <li><a href="">初めての方へ</a></li>
+                        <li><a href="">診療案内</a></li>
+                        <li><a href="">治療費について</a></li>
+                        <li><a href="">医師紹介</a></li>
+                        <li><a href="">よくある質問</a></li>
+                    <li><a href="">アクセス</a></li>
+                </ul>
+                </nav>
+                <div class="header_tel">
+                    電話予約
+                    <span><img src="/src/dentist/img/tel_icon.png" alt="電話アイコン" width="38px" height="43" class="tel_icon">
+                        <span class="tel_number">010-2345-6789</span>
+                    </span>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
         <!-- メインビジュアル -->
-        <div>
-            <img src="/src/dentist/img/mainvisual.png"alt="メインビジュアル">
-            <img src="/src/dentist/img/main_side.png" alt="メインビジュアル">
-            <p>健康な歯が、笑顔をつくる</p>
-            <p>患者様それぞれに合った治療方法を提案し、歯の健康を維持します。</p>
-        </div>
+        <div class="mainvisual" alt="メインビジュアル"></div>
         <!-- メインビジュアル -->
-        <!-- About -->
-        <div>
-            <h2>
-                <span>about</span>
-                当院について
-            </h2>
-            <p>痛みを感じてから歯医者に通院すると、治療が難しくなり、つらい経験をすることがあります。
-            そのため、当院では予防を第一とした診療を行っています。
-            悪くなる前に、定期的なメンテナンスで歯の健康を維持することが大切です。
+            <!-- About -->
+            <div class="about_inner">
+                <div class="flex_item">
+                    <h2 class="h2_title">
+                        <p class="h2_subtitle">about</p>
+                        当院について
+                    </h2>
+                    <div class="about_text">
+                        <p>痛みを感じてから歯医者に通院すると、治療が難しくなり、つらい経験をすることがあります。</p>
+                        <p>そのため、当院では予防を第一とした診療を行っています。</p>
+                        <p>悪くなる前に、定期的なメンテナンスで歯の健康を維持することが大切です。</p>
 
-            納得して治療を受けていただけるよう、専門スタッフによるカウンセリングも行っています。
-            まずはお気軽にご相談ください。
-            </p>
-             <a href="">初めての方へ</a>
-             <a href="">治療費について</a>
-             <img src="/src/dentist/img/about_img.png" alt="">
-        </div>
-        <!-- About -->
-        <!-- Menu -->
-        <div>
-            <h2>
-                <span>menu</span>
-                治療案内
-            </h2>
-            <div>
-                <a href=""><img src="/src/dentist/img/menu_icon01.png" alt=""></a>
-                <p><a href="">一般・予防歯科</a></p>
+                        <p>納得して治療を受けていただけるよう、専門スタッフによるカウンセリングも行っています。</p>
+                        <p>まずはお気軽にご相談ください。</p>
+                        <a href="">初めての方へ</a>
+                        <a href="">治療費について</a>
+                    </div>
+                </div>
+                <img src="/src/dentist/img/about_img.png" alt="院内写真" class="about_img">
             </div>
-            <div>
-                <a href=""><img src="/src/dentist/img/menu_icon02.png" alt="矯正歯科のアイコン"></a>
-                <p><a href="">矯正歯科</a></p>
-            </div>
-            <div>
-                <a href=""><img src="/src/dentist/img/menu_icon03.png" alt="ホワイトニングのアイコン"></a>
-                <p><a href="">ホワイトニング</a></p>
-            </div>
-            <div>
-                <a href=""><img src="/src/dentist/img/menu_icon04.png" alt="インプラントのアイコン"></a>
-                <p><a href="">インプラント</a></p>
-            </div>
-            <div>
-                <a href=""><img src="/src/dentist/img/menu_icon05.png" alt="小児歯科のアイコン"></a>
-                <p><a href="">小児歯科</a></p>
-            </div>
-            <div>
-                <a href=""><img src="/src/dentist/img/menu_icon06.png" alt="外科治療のアイコン"></a>
-                <p><a href="">外科治療</a></p>
-            </div>
-        </div>
-        <!-- Menu -->
-        <!-- Docter -->
-        <div>
-            <img src="/src/dentist/img/docter_img.png" alt="院長写真">
-            <h2>
-                <span>docter</span>
-                院長からのご挨拶
-            </h2>
-            <p>院長　鈴木太郎</p>
-            <p>患者様の口内の状態は一人ひとり異なります。そのため、求められる治療方法も様々です。
-            私たちは患者様それぞれに合った治療方法を考え、定期的な検診を通じてリスクを改善し、状態を維持・向上させることを目指しています。
-            また、日々学びを深めながら、患者さんのライフステージに合わせた治療を提供するために努力し、診療に取り組んでいます。
+            <!-- About -->
 
-            口内の健康を通じて、日常の暮らしをより豊かにするお手伝いをしていきたいと願っています。</p>
-        </div>
-        <a href="">詳しく見る</a>
-        <!-- Docter -->
+            <!-- Menu -->
+            <div class="menu_bg">
+            <h2 class="h2_title">
+                <p class="h2_subtitle">menu</p>
+                診療案内
+            </h2>
+                <div class="menu_inner">
+                    <div>
+                        <a href=""><img src="/src/dentist/img/menu_icon01.png" alt="一般・予防歯科のアイコン" class="menu_icon"></a>
+                        <p class="menu_link"><a href="">一般・予防歯科</a></p>
+                    </div>
+                    <div>
+                        <a href=""><img src="/src/dentist/img/menu_icon02.png" alt="矯正歯科のアイコン" class="menu_icon"></a>
+                        <p class="menu_link"><a href="">矯正歯科</a></p>
+                    </div>
+                    <div>
+                        <a href=""><img src="/src/dentist/img/menu_icon03.png" alt="ホワイトニングのアイコン" class="menu_icon"></a>
+                        <p class="menu_link"><a href="">ホワイトニング</a></p>
+                    </div>
+                </div>
+
+                 <div class="menu_inner">
+                    <div>
+                        <a href=""><img src="/src/dentist/img/menu_icon04.png" alt="インプラントのアイコン" class="menu_icon"></a>
+                        <p class="menu_link"><a href="">インプラント</a></p>
+                    </div>
+                    <div>
+                        <a href=""><img src="/src/dentist/img/menu_icon05.png" alt="小児歯科のアイコン" class="menu_icon"></a>
+                        <p class="menu_link"><a href="">小児歯科</a></p>
+                    </div>
+                    <div>
+                        <a href=""><img src="/src/dentist/img/menu_icon06.png" alt="外科治療のアイコン" class="menu_icon"></a>
+                        <p class="menu_link"><a href="">外科治療</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu -->
+            <!-- Docter -->
+            <div class="docter_inner">
+                <img src="/src/dentist/img/docter_img.png" alt="院長写真">
+                <div>
+                    <h2  class="h2_title">
+                        <p class="h2_subtitle">docter</p>
+                        院長からのご挨拶
+                    </h2>
+                    <p>院長　鈴木太郎</p>
+                    <p>患者様の口内の状態は一人ひとり異なります。そのため、求められる治療方法も様々です。
+                    私たちは患者様それぞれに合った治療方法を考え、定期的な検診を通じてリスクを改善し、状態を維持・向上させることを目指しています。
+                    また、日々学びを深めながら、患者さんのライフステージに合わせた治療を提供するために努力し、診療に取り組んでいます。
+
+                    口内の健康を通じて、日常の暮らしをより豊かにするお手伝いをしていきたいと願っています。</p>
+                    <a href="">詳しく見る</a>
+                </div>
+            </div>
+            <!-- Docter -->
     </main>
     <!-- Footer -->
     <footer>
-        <div>
+        <div class="footer_bg">
             <p>
                 <span>電話予約</span>
                 010-2345-6789
