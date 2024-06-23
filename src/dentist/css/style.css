@@ -49,6 +49,9 @@ p{
 .small_text{
 	font-size: 1.4rem;
 }
+small{
+	text-align: right;
+}
 
 /* ヘッダー */
 .header{
@@ -179,4 +182,11 @@ p{
 }
 .footer_info{
 	margin-right: 100px;
+}
+.footer_links{
+	display: flex;
+	justify-content: space-between;
+}
+.links{
+	display: flex;
 }
