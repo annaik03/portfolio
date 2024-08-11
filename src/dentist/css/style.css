@@ -7,7 +7,7 @@ body{
     font-family: 'Lato',"游ゴシック体","游ゴシック", "Yu Gothic", sans-serif;
 	font-weight:500;
 	color: #333333;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 }
 img{
 	max-width: 100%;
@@ -47,10 +47,71 @@ p{
 	margin-bottom: 15px;
 }
 .small_text{
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 }
 small{
 	text-align: right;
+}
+.btn_box{
+	margin-top: 30px;
+}
+.btn:first-child{
+	margin-right: 15px;
+}
+.btn{
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1.5;
+	position: relative;
+	display: inline-block;
+	padding: 1rem 4rem;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	color: #002B5C;
+	border: 2px solid #002B5C;
+}
+.btn_flat{
+	overflow: hidden;
+	padding: 1.3rem 4rem 1.3rem 3rem;
+	border-radius: 0;
+	color: #002B5C;
+}
+.btn_flat span {
+	position: relative;
+}
+.btn_flat::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	width: 100px;
+	height: 100px;
+
+	content: '';
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	-webkit-transform: translateX(75%) translateY(-23px);
+	transform: translateX(75%) translateY(-23px);
+
+	border-radius: 50%;
+	background: #E1EAF3;
+}
+.btn_flat:hover::after {
+	width: 400px;
+	height: 400px;
+
+	-webkit-transform: translateX(-1%) translateY(-175px);
+
+	transform: translateX(0%) translateY(-173px);
 }
 
 /* ヘッダー */
@@ -65,18 +126,25 @@ small{
 	align-items: start;
 }
 .header_logo{
-	width: 230px;
+	max-width: 150px;
+	height: auto;
 	background-color: #E1EAF3;
 	opacity: 90%;
-	padding: 10px;
+	padding: 15px;
+}
+.header_logo:hover{
+	opacity: .8;
 }
 .header_nav{
 	display: flex;
+		flex-direction: row;
+    justify-content: flex-end;
 }
 .header_nav_items{
 	display: flex;
 	flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
+	margin-right: 40px;
 }
 .header_nav li{
 	padding-left: 10px;
@@ -92,6 +160,7 @@ small{
 	font-size: 2.0rem;
 	font-weight: bold;
 	color: #002B5C;
+	letter-spacing: 0.1em;
 }
 
 
@@ -131,6 +200,7 @@ small{
 }
 .menu_inner > div:nth-child(1){	
 	margin-right: 50px;
+	margin-bottom: 30px;
 }
 .menu_inner > div:nth-child(2){	
 	margin-right: 50px;
@@ -185,8 +255,62 @@ small{
 }
 .footer_links{
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 }
 .links{
 	display: flex;
+}
+.footer_hr{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 0.5px;
+	background-color: #002B5C;
+}
+.footer_table{
+	margin-top: 20px;
+	border-collapse: collapse;
+	max-width: 385px;
+}
+.footer_table th, .footer_table td {
+	border: 1px solid #002B5C;
+	background-color: #fff;
+}
+.footer_table th {
+	background-color: #002B5C;
+	color: #fff;
+	text-align: center;
+	width: 20%;
+	min-width: 4em;
+}
+.footer_logo{
+	max-width: 150px;
+	height: auto;
+}
+.contact_btn{
+	display: inline-block;
+	text-align: center;
+	padding: 1rem 3rem;
+	margin-top: 1rem;
+	background-color: #BEE84C;
+	color: #fff;
+	font-size: 13px;
+	cursor: pointer;
+	max-height: 100px;
+}
+.contact_btn:hover{
+	opacity: .8;
+}
+.reservation_btn{
+	display: inline-block;
+	text-align: center;
+	padding: 1rem 3rem;
+	margin-top: 1rem;
+	background-color: #002B5C;
+	color: #fff;
+	font-size: 13px;
+	cursor: pointer;
+	max-height: 100px;
+}
+.reservation_btn:hover{
+	opacity: .8;
 }
