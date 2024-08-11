@@ -79,39 +79,34 @@ small{
 	color: #002B5C;
 	border: 2px solid #002B5C;
 }
-.btn_flat{
+.btn_flat_items {
+	display:flex;
+}
+.btn_flat_item{
 	overflow: hidden;
-	padding: 1.3rem 4rem 1.3rem 3rem;
-	border-radius: 0;
+	margin-right:12px;
+	height:57px;
+	width:220px;
+	border: 2px solid #002B5C;
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	text-decoration: none;
+	letter-spacing: 0.1em;
 	color: #002B5C;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1.5;
 }
-.btn_flat span {
+.btn_flat_label {
 	position: relative;
+	padding: 0 4rem 0 3rem;
 }
-.btn_flat::after {
-	position: absolute;
-	top: 0;
-	right: 0;
-
-	width: 100px;
-	height: 100px;
-
-	content: '';
-	-webkit-transition: all .5s ease-in-out;
-	transition: all .5s ease-in-out;
-	-webkit-transform: translateX(75%) translateY(-23px);
-	transform: translateX(75%) translateY(-23px);
-
-	border-radius: 50%;
-	background: #E1EAF3;
+.bold{
+	font-weight: bold;
 }
-.btn_flat:hover::after {
-	width: 400px;
-	height: 400px;
-
-	-webkit-transform: translateX(-1%) translateY(-175px);
-
-	transform: translateX(0%) translateY(-173px);
+.btn_opacity:hover{
+	opacity: .7;
 }
 
 /* ヘッダー */
@@ -137,7 +132,7 @@ small{
 }
 .header_nav{
 	display: flex;
-		flex-direction: row;
+	flex-direction: row;
     justify-content: flex-end;
 }
 .header_nav_items{
@@ -145,6 +140,27 @@ small{
 	flex-direction: row;
     justify-content: flex-end;
 	margin-right: 40px;
+    padding-top: 6px;
+}
+.header_nav_item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header_nav_items li a {
+	position: relative;
+	padding-top: 12px;
+}
+.header_nav_items li a:hover::before {
+	position: absolute;
+	content: "";
+	background-color: #002B5C;
+	width: 25px;
+	height: 2px;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
 }
 .header_nav li{
 	padding-left: 10px;
@@ -152,6 +168,9 @@ small{
 .header_tel{
 	display: flex;
 	flex-flow: column;
+    margin-top: 8px;
+    margin-right: 24px;
+
 }
 .tel_icon{
 	width: 16px;
@@ -161,6 +180,36 @@ small{
 	font-weight: bold;
 	color: #002B5C;
 	letter-spacing: 0.1em;
+}
+.follow_btn{
+	display: flex;
+	flex-flow: column;
+	position:fixed;
+	z-index:1;
+	right:0;
+	bottom:40px;
+}
+.contact_btn_follow{
+	display: inline-block;
+	text-align: center;
+	padding: 1.8rem 2rem 1rem 2rem;
+	background-color: #BEE84C;
+	color: #fff;
+	font-size: 13px;
+	cursor: pointer;
+	width: 55px;
+	height: auto;
+	white-space: nowrap;
+}
+.reservation_btn_follow{
+	display: inline-block;
+	text-align: center;
+	padding: 1rem 2rem 1rem 2rem;
+	background-color: #002B5C;
+	color: #fff;
+	font-size: 13px;
+	cursor: pointer;
+	max-height: 100px;
 }
 
 
@@ -179,18 +228,18 @@ small{
 	display: flex;
 	justify-content: space-between;
 	margin: 0 0 120px;
+	margin-left:10%;
 }
 .about_img{
-	max-height: 100vh;
+	max-height: 400px;
 	width: auto;
 }
 .about_text{
 	
 	max-width: 690px;
 }
-.flex_item{
-	margin-left: 10%;
-	margin-right: 100px;
+.about_text_box{
+	margin-right: 100px; 
 }
 
 /* menu */
@@ -253,12 +302,23 @@ small{
 .footer_info{
 	margin-right: 100px;
 }
+.footer_tel{
+	margin-bottom: 10px;
+}
 .footer_links{
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	margin: 50px 0 30px 0;
+	margin-right: 10%;
+	margin-left: 10%;
+	line-height: 1.7;
 }
 .links{
 	display: flex;
+}
+.link_line{
+	color: #919191;
+	margin-right: 5px;
 }
 .footer_hr{
 	margin-top: 20px;
@@ -268,12 +328,24 @@ small{
 }
 .footer_table{
 	margin-top: 20px;
+	margin-bottom: 5px;
 	border-collapse: collapse;
 	max-width: 385px;
+}
+.footer_table_title{
+	padding-right: 40px;
+}
+.footer_table_morning{
+	padding-right: 20px;
+}
+.footer_table_afternoon{
+	padding-right: 12px;
 }
 .footer_table th, .footer_table td {
 	border: 1px solid #002B5C;
 	background-color: #fff;
+	padding: 10px;
+	text-align: left;
 }
 .footer_table th {
 	background-color: #002B5C;
@@ -285,32 +357,31 @@ small{
 .footer_logo{
 	max-width: 150px;
 	height: auto;
+	margin-bottom: 60px;
+}
+.footer_copyright{
+	display: flex;
+	flex-flow: column;
 }
 .contact_btn{
 	display: inline-block;
 	text-align: center;
-	padding: 1rem 3rem;
-	margin-top: 1rem;
+	padding: 1.8rem 3rem 1rem 3rem;
 	background-color: #BEE84C;
 	color: #fff;
 	font-size: 13px;
 	cursor: pointer;
-	max-height: 100px;
-}
-.contact_btn:hover{
-	opacity: .8;
+	width: 55px;
+	height: auto;
+	white-space: nowrap;
 }
 .reservation_btn{
 	display: inline-block;
 	text-align: center;
 	padding: 1rem 3rem;
-	margin-top: 1rem;
 	background-color: #002B5C;
 	color: #fff;
 	font-size: 13px;
 	cursor: pointer;
 	max-height: 100px;
-}
-.reservation_btn:hover{
-	opacity: .8;
 }

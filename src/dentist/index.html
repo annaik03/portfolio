@@ -23,22 +23,34 @@
             </h1>
             <div class="header_nav">
                 <nav>
-                    <ul class="header_nav_items">
-                        <li><a href="">初めての方へ</a></li>
-                        <li><a href="">診療案内</a></li>
-                        <li><a href="">治療費について</a></li>
-                        <li><a href="">医師紹介</a></li>
-                        <li><a href="">よくある質問</a></li>
-                    <li><a href="">アクセス</a></li>
+                    <ul class="header_nav_items bold">
+                        <li class="header_nav_item"><a href="">初めての方へ</a></li>
+                        <li class="header_nav_item"><a href="">診療案内</a><img src="/src/dentist/img/arrow_down.png" alt=""></li>
+                        <li class="header_nav_item"><a href="">治療費について</a></li>
+                        <li class="header_nav_item"><a href="">医師紹介</a></li>
+                        <li class="header_nav_item"><a href="">よくある質問</a></li>
+                        <li class="header_nav_item"><a href="">アクセス</a></li>
                 </ul>
                 </nav>
-                <div class="header_tel">
+                <div class="header_tel btn_opacity">
                     <p class="small_text">電話予約</p>
                     <span><img src="/src/dentist/img/tel_icon.png" alt="電話アイコン" width="38px" height="43" class="tel_icon">
                         <span class="tel_number">010-2345-6789</span>
                     </span>
                 </div>
             </div>
+            
+            <div class="follow_btn">
+                <a href="" class="contact_btn_follow btn_opacity">
+                    <img src="/src/dentist/img/contact_icon.png" alt="" width="20px" height="15px">
+                    <p>問い合わせ</p>
+                </a>
+                <a href="" class="reservation_btn_follow btn_opacity">
+                    <img src="/src/dentist/img/reservation_icon.png" alt="" width="20px" height="15px">
+                    <p>WEB予約</p>
+                </a>
+            </div>
+
         </div>
     </header>
     <main>
@@ -47,7 +59,7 @@
         <!-- メインビジュアル -->
             <!-- About -->
             <div class="about_inner">
-                <div class="flex_item">
+                <div class="about_text_box">
                     <h2 class="h2_title">
                         <p class="h2_subtitle">about</p>
                         当院について
@@ -59,9 +71,15 @@
 
                         <p>納得して治療を受けていただけるよう、専門スタッフによるカウンセリングも行っています。</p>
                         <p>まずはお気軽にご相談ください。</p>
-                        <div class="btn_box">
-                            <a href="" class="btn btn_flat"><span>初めての方へ</span></a>
-                            <a href="" class="btn btn_flat"><span>治療費について</span></a>
+                        <div class="btn_flat_items btn_box">
+                            <a href="" class="btn_flat_item btn_opacity">
+                                <span class="btn_flat_label">初めての方へ</span>
+                                <img src="/src/dentist/img/flat_button_after.png" alt="">
+                            </a>
+                            <a href="" class="btn_flat_item btn_opacity">
+                                <span class="btn_flat_label">治療費について</span>
+                                <img src="/src/dentist/img/flat_button_after.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -76,30 +94,30 @@
                     診療案内
                 </h2>
                 <div class="menu_inner">
-                    <div>
+                    <div class="btn_opacity">
                         <a href=""><img src="/src/dentist/img/menu_icon01.png" alt="一般・予防歯科のアイコン" class="menu_icon"></a>
                         <p class="menu_link"><a href="">一般・予防歯科</a></p>
                     </div>
-                    <div>
+                    <div class="btn_opacity">
                         <a href=""><img src="/src/dentist/img/menu_icon02.png" alt="矯正歯科のアイコン" class="menu_icon"></a>
                         <p class="menu_link"><a href="">矯正歯科</a></p>
                     </div>
-                    <div>
+                    <div class="btn_opacity">
                         <a href=""><img src="/src/dentist/img/menu_icon03.png" alt="ホワイトニングのアイコン" class="menu_icon"></a>
                         <p class="menu_link"><a href="">ホワイトニング</a></p>
                     </div>
                 </div>
 
-                 <div class="menu_inner">
-                    <div>
+                <div class="menu_inner">
+                    <div class="btn_opacity">
                         <a href=""><img src="/src/dentist/img/menu_icon04.png" alt="インプラントのアイコン" class="menu_icon"></a>
                         <p class="menu_link"><a href="">インプラント</a></p>
                     </div>
-                    <div>
+                    <div class="btn_opacity">
                         <a href=""><img src="/src/dentist/img/menu_icon05.png" alt="小児歯科のアイコン" class="menu_icon"></a>
                         <p class="menu_link"><a href="">小児歯科</a></p>
                     </div>
-                    <div>
+                    <div class="btn_opacity">
                         <a href=""><img src="/src/dentist/img/menu_icon06.png" alt="外科治療のアイコン" class="menu_icon"></a>
                         <p class="menu_link"><a href="">外科治療</a></p>
                     </div>
@@ -120,28 +138,34 @@
                     <p class="text_space">また、日々学びを深めながら、患者さんのライフステージに合わせた治療を提供するために努力し、診療に取り組んでいます。</p>
 
                     <p>口内の健康を通じて、日常の暮らしをより豊かにするお手伝いをしていきたいと願っています。</p>
-                    <div class="btn_box">
+                    <div class="btn_flat_items btn_box btn_opacity">
+                            <a href="" class="btn_flat_item">
+                                <span class="btn_flat_label">詳しく見る</span>
+                                <img src="/src/dentist/img/flat_button_after.png" alt="">
+                            </a>
+                        </div>
+                    <!--<div class="btn_box">
                         <a href="" class="btn btn_flat"><span>詳しく見る</span></a>
-                    </div>
+                    </div>-->
                 </div>
             </div>
             <!-- Docter -->
     </main>
     <!-- Footer -->
-    <footer class="footer_inner">
+    <footer>
         <div class="footer_bg">
             <div class="footer_info">
-                <div>
+                <div class="footer_tel btn_opacity">
                     <p class="small_text">電話予約</p>
                     <span><img src="/src/dentist/img/tel_icon.png" alt="" width="38px" height="43px" class="tel_icon">
                         <span class="tel_number">010-2345-6789</span>
                     </span>
                 </div>
-                <a href="" class="contact_btn">
+                <a href="" class="contact_btn btn_opacity">
                     <img src="/src/dentist/img/contact_icon.png" alt="" width="25px" height="20px">
                     <p>問い合わせ</p>
                 </a>
-                <a href="" class="reservation_btn">
+                <a href="" class="reservation_btn btn_opacity">
                     <img src="/src/dentist/img/reservation_icon.png" alt="" width="25px" height="20px">
                     <p>WEB予約</p>
                 </a>
@@ -151,19 +175,19 @@
                 <p>横浜駅東口　徒歩2分</p>
                 <table class="footer_table" border="1">
                     <tr>
-                        <th>診療時間
+                        <th><span class="footer_table_title">診療時間</span>
                             月　火　水　木　金　土　日
                         </th>
                     </tr>
                     <tr align="center">
                         <td>
-                            9:00 - 13:00
+                            <span class="footer_table_morning">9:00 - 13:00</span>
                             ●　●　－　●　●　●　－
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            14:00 - 19:00
+                            <span class="footer_table_afternoon">14:00 - 19:00</span>
                             ●　●　－　●　●　－　－
                         </td>
                     </tr>
@@ -172,30 +196,34 @@
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.5459036515554!2d139.6202519959042!3d35.466034900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c13b015e16d%3A0xfd661ae574f67dbe!2z44CSMjIwLTAwMTEg56We5aWI5bed55yM5qiq5rWc5biC6KW_5Yy66auY5bO277yS5LiB55uu77yR77yW!5e0!3m2!1sja!2sjp!4v1714962772108!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="footer_links">
-            <h1 class="footer_logo">
-                <a href=""><img src="/src/dentist/img/logo.svg" alt="ロゴ"></a>
-            </h1>
+        <div class="footer_inner">
+            <div class="footer_links">
+            <div class="footer_copyright">
+                <h1 class="footer_logo">
+                    <a href="" class="btn_opacity"><img src="/src/dentist/img/logo.svg" alt="ロゴ"></a>
+                </h1>
+                <small>&copy;2023 suzuki dental clinic .inc</small>
+            </div>
             <nav class="links">
                 <ul>
-                    <li><a href="">初めての方へ</a></li>
-                    <li><a href="">診療案内</a></li>
-                    <li><a href="">一般・予防歯科</a></li>
-                    <li><a href="">矯正歯科</a></li>
-                    <li><a href="">ホワイトニング</a></li>
-                    <li><a href="">インプラント</a></li>
-                    <li><a href="">小児歯科</a></li>
-                    <li><a href="">外科治療</a></li>
+                    <li class="btn_opacity bold"><a href="">初めての方へ</a></li>
+                    <li class="btn_opacity bold"><a href="">診療案内</a></li>
+                    <li class="btn_opacity"><a href=""><span class="link_line">－</span>一般・予防歯科</a></li>
+                    <li class="btn_opacity"><a href=""><span class="link_line">－</span>矯正歯科</a></li>
+                    <li class="btn_opacity"><a href=""><span class="link_line">－</span>ホワイトニング</a></li>
+                    <li class="btn_opacity"><a href=""><span class="link_line">－</span>インプラント</a></li>
+                    <li class="btn_opacity"><a href=""><span class="link_line">－</span>小児歯科</a></li>
+                    <li class="btn_opacity"><a href=""><span class="link_line">－</span>外科治療</a></li>
                 </ul>
                 <ul>
-                    <li><a href="">治療費について</a></li>
-                    <li><a href="">医師紹介</a></li>
-                    <li><a href="">よくある質問</a></li>
-                    <li><a href="">アクセス</a></li>
-                    <li><a href="">プライバシーポリシー</a></li>
+                    <li class="btn_opacity bold"><a href="">治療費について</a></li>
+                    <li class="btn_opacity bold"><a href="">医師紹介</a></li>
+                    <li class="btn_opacity bold"><a href="">よくある質問</a></li>
+                    <li class="btn_opacity bold"><a href="">アクセス</a></li>
+                    <li class="btn_opacity bold"><a href="">プライバシーポリシー</a></li>
                 </ul>
             </nav>
-            <small>&copy;2023 suzuki dental clinic .inc</small>
+        </div>
         </div>
     </footer>
     <!-- Footer -->
