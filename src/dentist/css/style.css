@@ -1,387 +1,385 @@
 @charset "utf-8";
 
-html{
-	font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
-body{
-    font-family: 'Lato',"游ゴシック体","游ゴシック", "Yu Gothic", sans-serif;
-	font-weight:500;
-	color: #333333;
-	font-size: 1.4rem;
+body {
+  font-family: "Lato", "游ゴシック体", "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: 500;
+  color: #333333;
+  font-size: 1.4rem;
 }
-img{
-	max-width: 100%;
-	height: auto;
+img {
+  max-width: 100%;
+  height: auto;
 }
-a{
-	text-decoration: none;
-	color: #333333;
+a {
+  text-decoration: none;
+  color: #333333;
 }
 ul,
-li{
-	list-style: none;
+li {
+  list-style: none;
 }
-h2{
-	color: #002B5C;
-	font-size: 3.0rem;
+h2 {
+  color: #002b5c;
+  font-size: 3rem;
 }
-.h2_title{
-	text-align: left;
-	font-size: 3rem;
-	font-weight: 700;
+.h2_title {
+  text-align: left;
+  font-size: 3rem;
+  font-weight: 700;
 }
-.h2_subtitle{
-	margin-bottom: 5px;
-	font-size: 1.4rem;
-	font-weight: 500;
-	text-transform: uppercase;
+.h2_subtitle {
+  margin-bottom: 5px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
 }
-p{
-	line-height: 1.7;
-	margin:0;
+p {
+  line-height: 1.7;
+  margin: 0;
 }
-.center{
-	text-align: center;
+.center {
+  text-align: center;
 }
-.text_space{
-	margin-bottom: 15px;
+.text_space {
+  margin-bottom: 15px;
 }
-.small_text{
-	font-size: 1.2rem;
+.small_text {
+  font-size: 1.2rem;
 }
-small{
-	text-align: right;
+small {
+  text-align: right;
 }
-.btn_box{
-	margin-top: 30px;
+.btn_box {
+  margin-top: 30px;
 }
-.btn:first-child{
-	margin-right: 15px;
+.btn:first-child {
+  margin-right: 15px;
 }
-.btn{
-	font-size: 1.5rem;
-	font-weight: 700;
-	line-height: 1.5;
-	position: relative;
-	display: inline-block;
-	padding: 1rem 4rem;
-	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-	text-align: center;
-	vertical-align: middle;
-	text-decoration: none;
-	letter-spacing: 0.1em;
-	color: #002B5C;
-	border: 2px solid #002B5C;
+.btn {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #002b5c;
+  border: 2px solid #002b5c;
 }
 .btn_flat_items {
-	display:flex;
+  display: flex;
 }
-.btn_flat_item{
-	overflow: hidden;
-	margin-right:12px;
-	height:57px;
-	width:220px;
-	border: 2px solid #002B5C;
-	display:flex;
-	align-items: center;
-	justify-content: space-between;
-	text-decoration: none;
-	letter-spacing: 0.1em;
-	color: #002B5C;
-	font-size: 1.5rem;
-	font-weight: 700;
-	line-height: 1.5;
+.btn_flat_item {
+  overflow: hidden;
+  margin-right: 12px;
+  height: 57px;
+  width: 220px;
+  border: 2px solid #002b5c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #002b5c;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
 }
 .btn_flat_label {
-	position: relative;
-	padding: 0 4rem 0 3rem;
+  position: relative;
+  padding: 0 4rem 0 3rem;
 }
-.bold{
-	font-weight: bold;
+.bold {
+  font-weight: bold;
 }
-.btn_opacity:hover{
-	opacity: .7;
+.btn_opacity:hover {
+  opacity: 0.7;
 }
 
 /* ヘッダー */
-.header{
-	background-color: #ffffff;
-	width: 100%;
-	height: 90px;
+.header {
+  background-color: #ffffff;
+  width: 100%;
+  height: 90px;
 }
-.header_inner{
-	display: flex;
-	justify-content: space-between;
-	align-items: start;
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
 }
-.header_logo{
-	max-width: 150px;
-	height: auto;
-	background-color: #E1EAF3;
-	opacity: 90%;
-	padding: 15px;
+.header_logo {
+  max-width: 150px;
+  height: auto;
+  background-color: #e1eaf3;
+  opacity: 90%;
+  padding: 15px;
 }
-.header_logo:hover{
-	opacity: .8;
+.header_logo:hover {
+  opacity: 0.8;
 }
-.header_nav{
-	display: flex;
-	flex-direction: row;
-    justify-content: flex-end;
+.header_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
-.header_nav_items{
-	display: flex;
-	flex-direction: row;
-    justify-content: flex-end;
-	margin-right: 40px;
-    padding-top: 6px;
+.header_nav_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 40px;
+  padding-top: 6px;
 }
 .header_nav_item {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header_nav_items li a {
-	position: relative;
-	padding-top: 12px;
+  position: relative;
+  padding-top: 12px;
 }
 .header_nav_items li a:hover::before {
-	position: absolute;
-	content: "";
-	background-color: #002B5C;
-	width: 25px;
-	height: 2px;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
+  position: absolute;
+  content: "";
+  background-color: #002b5c;
+  width: 25px;
+  height: 2px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.header_nav li{
-	padding-left: 10px;
+.header_nav li {
+  padding-left: 10px;
 }
-.header_tel{
-	display: flex;
-	flex-flow: column;
-    margin-top: 8px;
-    margin-right: 24px;
-
+.header_tel {
+  display: flex;
+  flex-flow: column;
+  margin-top: 8px;
+  margin-right: 24px;
 }
-.tel_icon{
-	width: 16px;
+.tel_icon {
+  width: 16px;
 }
-.tel_number{
-	font-size: 2.0rem;
-	font-weight: bold;
-	color: #002B5C;
-	letter-spacing: 0.1em;
+.tel_number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #002b5c;
+  letter-spacing: 0.1em;
 }
-.follow_btn{
-	display: flex;
-	flex-flow: column;
-	position:fixed;
-	z-index:1;
-	right:0;
-	bottom:40px;
+.follow_btn {
+  display: flex;
+  flex-flow: column;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  bottom: 40px;
 }
-.contact_btn_follow{
-	display: inline-block;
-	text-align: center;
-	padding: 1.8rem 2rem 1rem 2rem;
-	background-color: #BEE84C;
-	color: #fff;
-	font-size: 13px;
-	cursor: pointer;
-	width: 55px;
-	height: auto;
-	white-space: nowrap;
+.contact_btn_follow {
+  display: inline-block;
+  text-align: center;
+  padding: 1.8rem 2rem 1rem 2rem;
+  background-color: #bee84c;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  width: 55px;
+  height: auto;
+  white-space: nowrap;
 }
-.reservation_btn_follow{
-	display: inline-block;
-	text-align: center;
-	padding: 1rem 2rem 1rem 2rem;
-	background-color: #002B5C;
-	color: #fff;
-	font-size: 13px;
-	cursor: pointer;
-	max-height: 100px;
+.reservation_btn_follow {
+  display: inline-block;
+  text-align: center;
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: #002b5c;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  max-height: 100px;
 }
-
 
 /* メインビジュアル */
 .mainvisual {
-    min-height: 100vh;
-    max-width: 100%;
-    background-image: url(/src/dentist/img/main_img.png);
-	background-size: cover;
-    background-position: center;
-	margin: 0 0 120px;
+  min-height: 100vh;
+  max-width: 100%;
+  background-image: url(./images/main_img.png);
+  background-size: cover;
+  background-position: center;
+  margin: 0 0 120px;
 }
 
 /* about */
-.about_inner{
-	display: flex;
-	justify-content: space-between;
-	margin: 0 0 120px;
-	margin-left:10%;
+.about_inner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 120px;
+  margin-left: 10%;
 }
-.about_img{
-	max-height: 400px;
-	width: auto;
+.about_img {
+  max-height: 400px;
+  width: auto;
 }
-.about_text{
-	
-	max-width: 690px;
+.about_text {
+  max-width: 690px;
 }
-.about_text_box{
-	margin-right: 100px; 
+.about_text_box {
+  margin-right: 100px;
 }
 
 /* menu */
-.menu_inner{
-	display: flex;
-	justify-content: center;
+.menu_inner {
+  display: flex;
+  justify-content: center;
 }
-.menu_inner > div:nth-child(1){	
-	margin-right: 50px;
-	margin-bottom: 30px;
+.menu_inner > div:nth-child(1) {
+  margin-right: 50px;
+  margin-bottom: 30px;
 }
-.menu_inner > div:nth-child(2){	
-	margin-right: 50px;
+.menu_inner > div:nth-child(2) {
+  margin-right: 50px;
 }
 
-.menu_bg{
-	max-width: 80%;
-	background-color: #E1EAF3;
-	text-align: center;
-	margin: 0 auto 120px;
-	border-radius: 235px;
-	padding: 20px 0 80px;
+.menu_bg {
+  max-width: 80%;
+  background-color: #e1eaf3;
+  text-align: center;
+  margin: 0 auto 120px;
+  border-radius: 235px;
+  padding: 20px 0 80px;
 }
-.menu_icon{
-	height: 130px;
-	width: auto;
+.menu_icon {
+  height: 130px;
+  width: auto;
 }
-.menu_link{
-	font-size: 1.8rem;
-	font-weight: bold;
+.menu_link {
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 /* docter */
-.docter_inner{
-	display: flex;
-	margin: 0 0 120px;
+.docter_inner {
+  display: flex;
+  margin: 0 0 120px;
 }
-.docter_img{
-	max-height: 400px;
-	width: auto;
-	margin-right: 100px;
+.docter_img {
+  max-height: 400px;
+  width: auto;
+  margin-right: 100px;
 }
-.docter_greeting{
-	margin-right: 10%;
+.docter_greeting {
+  margin-right: 10%;
 }
-.docter_name{
-	font-size: 1.8rem;
-	font-weight: bold;
-	color: #002B5C;
-	margin-bottom: 10px;
+.docter_name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #002b5c;
+  margin-bottom: 10px;
 }
 
 /* footer */
-.footer_bg{
-	background-color: #E1EAF3;
-	display: flex;
-	justify-content: center;
-	padding: 80px 10% 80px;
+.footer_bg {
+  background-color: #e1eaf3;
+  display: flex;
+  justify-content: center;
+  padding: 80px 10% 80px;
 }
-.footer_info{
-	margin-right: 100px;
+.footer_info {
+  margin-right: 100px;
 }
-.footer_tel{
-	margin-bottom: 10px;
+.footer_tel {
+  margin-bottom: 10px;
 }
-.footer_links{
-	display: flex;
-	justify-content: space-between;
-	margin: 50px 0 30px 0;
-	margin-right: 10%;
-	margin-left: 10%;
-	line-height: 1.7;
+.footer_links {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 30px 0;
+  margin-right: 10%;
+  margin-left: 10%;
+  line-height: 1.7;
 }
-.links{
-	display: flex;
+.links {
+  display: flex;
 }
-.link_line{
-	color: #919191;
-	margin-right: 5px;
+.link_line {
+  color: #919191;
+  margin-right: 5px;
 }
-.footer_hr{
-	margin-top: 20px;
-	margin-bottom: 20px;
-	height: 0.5px;
-	background-color: #002B5C;
+.footer_hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 0.5px;
+  background-color: #002b5c;
 }
-.footer_table{
-	margin-top: 20px;
-	margin-bottom: 5px;
-	border-collapse: collapse;
-	max-width: 385px;
+.footer_table {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  border-collapse: collapse;
+  max-width: 385px;
 }
-.footer_table_title{
-	padding-right: 40px;
+.footer_table_title {
+  padding-right: 40px;
 }
-.footer_table_morning{
-	padding-right: 20px;
+.footer_table_morning {
+  padding-right: 20px;
 }
-.footer_table_afternoon{
-	padding-right: 12px;
+.footer_table_afternoon {
+  padding-right: 12px;
 }
-.footer_table th, .footer_table td {
-	border: 1px solid #002B5C;
-	background-color: #fff;
-	padding: 10px;
-	text-align: left;
+.footer_table th,
+.footer_table td {
+  border: 1px solid #002b5c;
+  background-color: #fff;
+  padding: 10px;
+  text-align: left;
 }
 .footer_table th {
-	background-color: #002B5C;
-	color: #fff;
-	text-align: center;
-	width: 20%;
-	min-width: 4em;
+  background-color: #002b5c;
+  color: #fff;
+  text-align: center;
+  width: 20%;
+  min-width: 4em;
 }
-.footer_logo{
-	max-width: 150px;
-	height: auto;
-	margin-bottom: 60px;
+.footer_logo {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 60px;
 }
-.footer_copyright{
-	display: flex;
-	flex-flow: column;
+.footer_copyright {
+  display: flex;
+  flex-flow: column;
 }
-.contact_btn{
-	display: inline-block;
-	text-align: center;
-	padding: 1.8rem 3rem 1rem 3rem;
-	background-color: #BEE84C;
-	color: #fff;
-	font-size: 13px;
-	cursor: pointer;
-	width: 55px;
-	height: auto;
-	white-space: nowrap;
+.contact_btn {
+  display: inline-block;
+  text-align: center;
+  padding: 1.8rem 3rem 1rem 3rem;
+  background-color: #bee84c;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  width: 55px;
+  height: auto;
+  white-space: nowrap;
 }
-.reservation_btn{
-	display: inline-block;
-	text-align: center;
-	padding: 1rem 3rem;
-	background-color: #002B5C;
-	color: #fff;
-	font-size: 13px;
-	cursor: pointer;
-	max-height: 100px;
+.reservation_btn {
+  display: inline-block;
+  text-align: center;
+  padding: 1rem 3rem;
+  background-color: #002b5c;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  max-height: 100px;
 }
