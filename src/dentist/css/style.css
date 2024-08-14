@@ -215,7 +215,7 @@ small {
 .mainvisual {
   min-height: 100vh;
   max-width: 100%;
-  background-image: url(./images/main_img.png);
+  background-image: url(../images/main_img.png);
   background-size: cover;
   background-position: center;
   margin: 0 0 120px;
