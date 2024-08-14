@@ -17,7 +17,7 @@ module.exports = {
     },
     fontFamily: {
       jost: ["Jost", "san-selif"],
-      notosans: ["NotoSansJp"],
+      notosans: ["Noto Sans Jp"],
     },
   },
   plugins: [
