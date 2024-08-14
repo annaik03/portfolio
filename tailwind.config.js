@@ -1,3 +1,8 @@
+const {
+  iconsPlugin,
+  getIconCollections,
+} = require("@egoist/tailwindcss-icons");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
@@ -12,5 +17,9 @@ module.exports = {
       jost: ["Jost", "san-selif"],
     },
   },
-  plugins: [],
+  plugins: [
+    iconsPlugin({
+      collections: getIconCollections(["grommet-icons", "mi"]),
+    }),
+  ],
 };
