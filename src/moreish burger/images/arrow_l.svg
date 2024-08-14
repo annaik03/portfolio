@@ -1,0 +1,19 @@
+<svg id="左矢印" xmlns="http://www.w3.org/2000/svg" width="30" height="150" viewBox="0 0 30 150">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1b3b2e;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        font-size: 22px;
+        fill: #fff;
+        text-anchor: middle;
+        font-family: "MS Mincho";
+      }
+    </style>
+  </defs>
+  <path id="長方形_16" data-name="長方形 16" class="cls-1" d="M147,2020.24h30v150H147v-150Z" transform="translate(-147 -2020.25)"/>
+  <text id="_" data-name="&lt;" class="cls-2" x="12.667" y="81.987">&lt;</text>
+</svg>
