@@ -42,9 +42,9 @@
           <li class="p-6">
             <a
               class="underline decoration-1 underline-offset-8"
-              href="#about"
+              href="#profile"
               data-drawer-hide="sp-sidebar"
-              >About</a
+              >Profile</a
             >
           </li>
           <li class="p-6">
@@ -92,11 +92,11 @@
         <ul
           class="flex w-full items-center font-jost text-xl font-medium text-light-navy"
         >
-          <li class="hover:text-orange z-50"><a href="#">Home</a></li>
-          <li class="hover:text-orange z-50 ml-3">
-            <a href="#about">About</a>
+          <li class="z-50 hover:text-orange"><a href="#">Home</a></li>
+          <li class="z-50 ml-3 hover:text-orange">
+            <a href="#profile">Profile</a>
           </li>
-          <li class="hover:text-orange z-50 ml-3">
+          <li class="z-50 ml-3 hover:text-orange">
             <a href="#web-sites">Designs</a>
           </li>
           <li class="z-50 ml-3">
@@ -106,7 +106,7 @@
               href="https://github.com/annaik03/portfolio"
             >
               <span
-                class="hover:bg-orange i-grommet-icons-github h-6 w-6"
+                class="i-grommet-icons-github h-6 w-6 hover:bg-orange"
               ></span>
             </a>
           </li>
@@ -131,20 +131,40 @@
         </h1>
       </div>
       <!-- メインビジュアル -->
-      <!-- About -->
+      <!-- Profile -->
+      <div id="profile" class="h-14 lg:h-0"></div>
       <div
-        id="about"
-        class="w-11/12 rounded-br-xl rounded-tr-xl bg-white px-8 py-4 shadow lg:w-4/6 lg:px-40 lg:py-8"
+        class="w-11/12 rounded-br-xl rounded-tr-xl bg-white py-4 pl-8 pr-8 shadow lg:w-5/6 lg:py-8 lg:pl-40 lg:pr-12"
       >
-        <dl class="flex items-center">
-          <dt class="font-jost text-3xl">Anna Ishikawa</dt>
-          <dd class="ml-8 font-jost text-gray-400">WEB DESIGNER</dd>
-        </dl>
-        <p class="font-notosans mt-4">
-          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        <p class="font-jost text-3xl">Profile</p>
+        <p class="mt-4 border-b-2 pb-4 font-notosans">
+          大阪にてフリーランスのWeb制作をしております。<br />
+          2006年よりアルバイトにて制作を始める。<br />
+          2007年から5年間大阪市内の制作会社でデザイン・コーディングなどの業務を行う。<br />
+          2012年よりフリーランスへ転向。
         </p>
+        <!-- <p class="mt-4 font-notosans"> -->
+        <dl class="mt-4 flex flex-wrap items-center font-notosans">
+          <dt class="w-full font-bold lg:w-1/4">職種：</dt>
+          <dd class="mb-2 w-full lg:mb-0 lg:w-3/4">
+            WEBデザイナー（デザイン、ディレクション、軽微なコーディング）
+          </dd>
+          <dt class="w-full font-bold lg:w-1/4">得意なデザイン：</dt>
+          <dd class="mb-2 w-full lg:mb-0 lg:w-3/4">シンプル、きれい</dd>
+          <dt class="w-full font-bold lg:w-1/4">スキル：</dt>
+          <dd class="mb-2 w-full lg:mb-0 lg:w-3/4">
+            Photoshop、illustrator、Adobe XD、HTML、CSS
+          </dd>
+        </dl>
+        <!-- <span class="font-bold">職種：　　　　　　</span>
+        WEBデザイナー（デザイン、ディレクション、軽微なコーディング）<br />
+        <span class="font-bold">得意なデザイン：　</span>
+        シンプル、きれい<br />
+        <span class="font-bold">スキル：　　　　　</span>
+        Photoshop、illustrator、Adobe XD、HTML、CSS -->
+        <!-- </p> -->
       </div>
-      <!-- About -->
+      <!-- Profile -->
       <!-- Works -->
       <div class="mt-16 lg:flex lg:justify-center">
         <div class="w-full flex-row lg:w-10/12">
@@ -160,7 +180,7 @@
                 class="m-2 rounded-lg border border-gray-200 bg-white px-4 pt-4 shadow"
               >
                 <img
-                  class="border-silver border"
+                  class="border border-silver"
                   src="./public/images/suzuki_dental_clinic_mv.png"
                   alt=""
                 />
@@ -169,9 +189,10 @@
                     架空の歯科サイト / デザイン・コーディング
                   </h3>
                   <p
-                    class="font-notosans mb-4 pt-2 text-sm text-gray-700 dark:text-gray-400"
+                    class="mb-4 pt-2 font-notosans text-sm text-gray-700 dark:text-gray-400"
                   >
-                    制作期間：約3日 ・テーマカラー：水色、青<br />
+                    制作期間：約3日<br />
+                    ・テーマカラー：水色、青<br />
                     ・コンセプト：近隣に住んでいる方が安心して来院できる街の歯医者さん<br />
                     ・工夫点：清潔感と信頼感を出すために青系の色を使用しています。<br />
                     また、冷たい雰囲気にせず親しみやすさを出すよう、写真の色味を柔らかくしたり、アイコンは丸めのものを使用しています。
@@ -179,7 +200,7 @@
                   <a
                     href="./dentist/index.html"
                     target="_blank"
-                    class="font-notosans bg-orange self-end px-6 py-2 text-sm font-medium text-white hover:opacity-70"
+                    class="self-end bg-orange px-6 py-2 font-notosans text-sm font-medium text-white hover:opacity-70"
                   >
                     サイトを見る
                   </a>
@@ -191,26 +212,28 @@
                 class="m-2 rounded-lg border border-gray-200 bg-white px-4 pt-4 shadow"
               >
                 <img
-                  class="border-silver border"
+                  class="border border-silver"
                   src="./public/images/moreish_burger_mv.png"
                   alt=""
                 />
                 <div class="flex flex-col p-5">
                   <h3 class="font-notosans font-bold text-gray-700">
-                    架空の歯科サイト / デザイン・コーディング
+                    moreish burger / 仮想のハンバーガー屋のサイト
                   </h3>
                   <p
-                    class="font-notosans mb-4 pt-2 text-sm text-gray-700 dark:text-gray-400"
+                    class="mb-4 pt-2 font-notosans text-sm text-gray-700 dark:text-gray-400"
                   >
-                    制作期間：約3日 ・テーマカラー：水色、青<br />
-                    ・コンセプト：近隣に住んでいる方が安心して来院できる街の歯医者さん<br />
-                    ・工夫点：清潔感と信頼感を出すために青系の色を使用しています。<br />
-                    また、冷たい雰囲気にせず親しみやすさを出すよう、写真の色味を柔らかくしたり、アイコンは丸めのものを使用しています。
+                    ・制作期間：約1か月<br />
+                    ・ターゲット：10～30代の男女<br />
+                    ・テーマカラー：茶、赤<br />
+                    ・コンセプト：お洒落なハンバーガーショップ<br />
+                    ・工夫点：本格的なハンバーガーが売りのお店なので、提供している料理の写真が美味しそうに見えるよう心がけました。<br />
+                    線の細いイラストと癖のあるデザインフォントでレトロな雰囲気を出しています。
                   </p>
                   <a
                     href="./moreish burger/index.html"
                     target="_blank"
-                    class="font-notosans bg-orange self-end px-6 py-2 text-sm font-medium text-white hover:opacity-70"
+                    class="self-end bg-orange px-6 py-2 font-notosans text-sm font-medium text-white hover:opacity-70"
                   >
                     サイトを見る
                   </a>
@@ -222,26 +245,27 @@
                 class="m-2 rounded-lg border border-gray-200 bg-white px-4 pt-4 shadow"
               >
                 <img
-                  class="border-silver border"
+                  class="border border-silver"
                   src="./public/images/utataneshoko_mv.png"
                   alt=""
                 />
                 <div class="flex flex-col p-5">
                   <h3 class="font-notosans font-bold text-gray-700">
-                    架空の歯科サイト / デザイン・コーディング
+                    架空のブックホテルサイト / デザイン・コーディング
                   </h3>
                   <p
-                    class="font-notosans mb-4 pt-2 text-sm text-gray-700 dark:text-gray-400"
+                    class="mb-4 pt-2 font-notosans text-sm text-gray-700 dark:text-gray-400"
                   >
-                    制作期間：約3日 ・テーマカラー：水色、青<br />
-                    ・コンセプト：近隣に住んでいる方が安心して来院できる街の歯医者さん<br />
-                    ・工夫点：清潔感と信頼感を出すために青系の色を使用しています。<br />
-                    また、冷たい雰囲気にせず親しみやすさを出すよう、写真の色味を柔らかくしたり、アイコンは丸めのものを使用しています。
+                    ・制作期間：約1か月<br />
+                    ・ターゲット：20～40代の女性 ・テーマカラー：ピンク<br />
+                    ・コンセプト：女性が泊まりやすいブックホテルのサイト<br />
+                    ・工夫点：本好きな方の目に留まるよう紙の温もりを活かし、女性向けの柔らかな色合いでまとめています。<br />
+                    ホテルのコンセプトが伝わるよう、本のモチーフを様々な場所に散りばめました。
                   </p>
                   <a
                     href="./utataneshyoko/index.html"
                     target="_blank"
-                    class="font-notosans bg-orange self-end px-6 py-2 text-sm font-medium text-white hover:opacity-70"
+                    class="self-end bg-orange px-6 py-2 font-notosans text-sm font-medium text-white hover:opacity-70"
                   >
                     サイトを見る
                   </a>
@@ -261,24 +285,26 @@
                 class="m-2 rounded-lg border border-gray-200 bg-white px-4 pt-4 shadow"
               >
                 <img
-                  class="border-silver border"
+                  class="border border-silver"
                   src="./public/images/natural_company_mv.png"
                   alt=""
                 />
                 <div class="flex flex-col p-5">
                   <h3 class="font-notosans font-bold text-gray-700">
-                    架空の歯科サイト / デザイン・コーディング
+                    架空の不動産会社のサイト / デザイン
                   </h3>
                   <p
-                    class="font-notosans mb-4 pt-2 text-sm text-gray-700 dark:text-gray-400"
+                    class="mb-4 pt-2 font-notosans text-sm text-gray-700 dark:text-gray-400"
                   >
-                    制作期間：約3日 ・テーマカラー：水色、青<br />
-                    ・コンセプト：近隣に住んでいる方が安心して来院できる街の歯医者さん<br />
-                    ・工夫点：清潔感と信頼感を出すために青系の色を使用しています。<br />
-                    また、冷たい雰囲気にせず親しみやすさを出すよう、写真の色味を柔らかくしたり、アイコンは丸めのものを使用しています。
+                    ・制作期間：約3日<br />
+                    ・ターゲット：30～50代の物件、リフォーム会社を探している方<br />
+                    ・テーマカラー：モノトーン、ベージュ<br />
+                    ・コンセプト：施工事例やイベント情報を紹介するサイト（ゴールは住宅展示場に足を運んでもらうこと）<br />
+                    ・工夫点：物件写真をより魅力的に見せるため、写真の配置方法を調整したり、写真以外は主張のない色を使うようにしました。<br />
+                    イベント情報がゴールなのでTOPの上部に表示されるようにしています。
                   </p>
                   <button
-                    class="font-notosans bg-orange self-end px-6 py-2 text-sm font-medium text-white hover:opacity-70"
+                    class="self-end bg-orange px-6 py-2 font-notosans text-sm font-medium text-white hover:opacity-70"
                     data-modal-show="natural-company-modal"
                     data-modal-target="natural-company-modal"
                   >
@@ -296,7 +322,7 @@
                     class="relative rounded-lg bg-white shadow dark:bg-gray-700"
                   >
                     <div
-                      class="flex items-center justify-between rounded-t border-b p-4 md:p-5 dark:border-gray-600"
+                      class="flex items-center justify-between rounded-t border-b p-4 dark:border-gray-600 md:p-5"
                     >
                       <p
                         class="font-notosans text-xl font-medium text-gray-700 dark:text-white"
@@ -328,24 +354,26 @@
                 class="m-2 rounded-lg border border-gray-200 bg-white px-4 pt-4 shadow"
               >
                 <img
-                  class="border-silver border"
+                  class="border border-silver"
                   src="./public/images/wakaba_kindergarten_mv.png"
                   alt=""
                 />
                 <div class="flex flex-col p-5">
                   <h3 class="font-notosans font-bold text-gray-700">
-                    架空の歯科サイト / デザイン・コーディング
+                    架空の幼稚園のサイト / デザイン
                   </h3>
                   <p
-                    class="font-notosans mb-4 pt-2 text-sm text-gray-700 dark:text-gray-400"
+                    class="mb-4 pt-2 font-notosans text-sm text-gray-700 dark:text-gray-400"
                   >
-                    制作期間：約3日 ・テーマカラー：水色、青<br />
-                    ・コンセプト：近隣に住んでいる方が安心して来院できる街の歯医者さん<br />
-                    ・工夫点：清潔感と信頼感を出すために青系の色を使用しています。<br />
-                    また、冷たい雰囲気にせず親しみやすさを出すよう、写真の色味を柔らかくしたり、アイコンは丸めのものを使用しています。
+                    ・制作期間：約4日<br />
+                    ・ターゲット：子供を伸び伸びと育てる環境を探している保護者の方<br />
+                    ・テーマカラー：緑、黄緑、黄色<br />
+                    ・コンセプト：子供の自主性を大切にし、遊ぶことに力を入れている幼稚園<br />
+                    ・工夫点：サイト名に因んだ葉っぱのモチーフを取り入れたり、写真の形を工夫して、幼稚園の楽しさが伝わるようなデザインにしました。<br />
+                    幼稚園探しをしている保護者はもちろん、今子供を預けている保護者も見たくなるようにコラムや行事写真を充実させています。
                   </p>
                   <button
-                    class="font-notosans bg-orange self-end px-6 py-2 text-sm font-medium text-white hover:opacity-70"
+                    class="self-end bg-orange px-6 py-2 font-notosans text-sm font-medium text-white hover:opacity-70"
                     data-modal-show="wakaba-kindergarten-modal"
                     data-modal-target="wakaba-kindergarten-modal"
                   >
@@ -363,7 +391,7 @@
                     class="relative rounded-lg bg-white shadow dark:bg-gray-700"
                   >
                     <div
-                      class="flex items-center justify-between rounded-t border-b p-4 md:p-5 dark:border-gray-600"
+                      class="flex items-center justify-between rounded-t border-b p-4 dark:border-gray-600 md:p-5"
                     >
                       <p
                         class="font-notosans text-xl font-medium text-gray-700 dark:text-white"
@@ -395,24 +423,26 @@
                 class="m-2 rounded-lg border border-gray-200 bg-white px-4 pt-4 shadow"
               >
                 <img
-                  class="border-silver border"
+                  class="border border-silver"
                   src="./public/images/kowaku_mv.png"
                   alt=""
                 />
                 <div class="flex flex-col p-5">
                   <h3 class="font-notosans font-bold text-gray-700">
-                    架空の歯科サイト / デザイン・コーディング
+                    架空のコワーキングスペースのサイト / デザイン
                   </h3>
                   <p
-                    class="font-notosans mb-4 pt-2 text-sm text-gray-700 dark:text-gray-400"
+                    class="mb-4 pt-2 font-notosans text-sm text-gray-700 dark:text-gray-400"
                   >
-                    制作期間：約3日 ・テーマカラー：水色、青<br />
-                    ・コンセプト：近隣に住んでいる方が安心して来院できる街の歯医者さん<br />
-                    ・工夫点：清潔感と信頼感を出すために青系の色を使用しています。<br />
-                    また、冷たい雰囲気にせず親しみやすさを出すよう、写真の色味を柔らかくしたり、アイコンは丸めのものを使用しています。
+                    ・制作期間：約8日
+                    ・ターゲット：10～30代の男女、仕事・勉強などの作業場所を探している方
+                    ・テーマカラー：黄色、青
+                    ・コンセプト：見た人が行きたくなるコワーキングスペースのサイト
+                    ・工夫点：見た人が実店舗に来店してくれることがゴールなので、楽しそうだと思ってもらえるように明るい色や形を使用して作成しました。
+                    また、コワーキングスペースの雰囲気が伝わるように大きめに写真を配置しています。
                   </p>
                   <button
-                    class="font-notosans bg-orange self-end px-6 py-2 text-sm font-medium text-white hover:opacity-70"
+                    class="self-end bg-orange px-6 py-2 font-notosans text-sm font-medium text-white hover:opacity-70"
                     data-modal-show="kowaku-modal"
                     data-modal-target="kowaku-modal"
                   >
@@ -430,7 +460,7 @@
                     class="relative rounded-lg bg-white shadow dark:bg-gray-700"
                   >
                     <div
-                      class="flex items-center justify-between rounded-t border-b p-4 md:p-5 dark:border-gray-600"
+                      class="flex items-center justify-between rounded-t border-b p-4 dark:border-gray-600 md:p-5"
                     >
                       <p
                         class="font-notosans text-xl font-medium text-gray-700 dark:text-white"
@@ -492,8 +522,10 @@
         <nav class="flex flex-col items-start justify-center">
           <ul class="flex font-jost text-xl font-medium text-light-navy">
             <li><a class="hover:text-orange" href="#">Home</a></li>
-            <li class="hover:text-orange ml-3"><a href="#about">About</a></li>
-            <li class="hover:text-orange ml-3">
+            <li class="ml-3 hover:text-orange">
+              <a href="#profile">Profile</a>
+            </li>
+            <li class="ml-3 hover:text-orange">
               <a href="#web-sites">Works</a>
             </li>
             <li class="ml-3">
@@ -503,7 +535,7 @@
                 href="https://github.com/annaik03/portfolio"
               >
                 <span
-                  class="hover:bg-orange i-grommet-icons-github h-6 w-6"
+                  class="i-grommet-icons-github h-6 w-6 hover:bg-orange"
                 ></span>
               </a>
             </li>
