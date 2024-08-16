@@ -431,66 +431,117 @@
               <div
                 class="m-2 rounded-lg border border-gray-200 bg-white px-4 pt-4 shadow"
               >
-                <img
-                  class="border border-silver"
-                  src="./public/images/natural_company_mv.png"
-                  alt=""
-                />
-                <div class="flex flex-col p-5">
-                  <h3 class="font-notosans font-bold text-gray-700">
-                    架空の不動産会社のサイト / デザイン
-                  </h3>
-                  <p
-                    class="mb-4 pt-2 font-notosans text-sm text-gray-700 dark:text-gray-400"
-                  >
-                    ・制作期間：約3日<br />
-                    ・ターゲット：30～50代の物件、リフォーム会社を探している方<br />
-                    ・テーマカラー：モノトーン、ベージュ<br />
-                    ・コンセプト：施工事例やイベント情報を紹介するサイト（ゴールは住宅展示場に足を運んでもらうこと）<br />
-                    ・工夫点：物件写真をより魅力的に見せるため、写真の配置方法を調整したり、写真以外は主張のない色を使うようにしました。<br />
-                    イベント情報がゴールなのでTOPの上部に表示されるようにしています。
-                  </p>
+                <button
+                  data-modal-show="natural-company-modal"
+                  data-modal-target="natural-company-modal"
+                >
+                  <img
+                    class="border border-silver hover:opacity-70"
+                    src="./public/images/natural_company_mv.png"
+                    alt=""
+                  />
+                </button>
+                <div id="ac-natural" data-accordion="collapse" class="p-5">
                   <button
-                    class="self-end bg-orange px-6 py-2 font-notosans text-sm font-medium text-white hover:opacity-70"
-                    data-modal-show="natural-company-modal"
-                    data-modal-target="natural-company-modal"
+                    type="button"
+                    id="ach-natural"
+                    class="flex w-full items-center justify-between bg-transparent font-notosans font-bold text-gray-700 hover:opacity-70"
+                    data-accordion-target="#acb-natural"
+                    aria-expanded="false"
+                    aria-controls="acb-natural"
                   >
-                    デザインを見る
+                    <div class="flex flex-col items-start lg:flex-row">
+                      <p>架空の歯科サイト</p>
+                      <p class="mx-2 hidden lg:block">/</p>
+                      <p>デザイン・コーディング</p>
+                    </div>
+                    <span class="i-mi-chevron-down h-5 w-5"></span>
                   </button>
-                </div>
-              </div>
-              <div
-                id="natural-company-modal"
-                tabindex="-1"
-                class="fixed left-0 right-0 top-0 z-50 hidden h-[calc(100%-1rem)] max-h-full w-full overflow-y-auto overflow-x-hidden p-4 md:inset-0"
-              >
-                <div class="relative max-h-full w-full max-w-7xl">
                   <div
-                    class="relative rounded-lg bg-white shadow dark:bg-gray-700"
+                    id="acb-natural"
+                    class="hidden"
+                    aria-labelledby="ach-natural"
                   >
-                    <div
-                      class="flex items-center justify-between rounded-t border-b p-4 dark:border-gray-600 md:p-5"
+                    <dl
+                      class="mb-4 ml-2 flex flex-wrap items-start pt-2 font-notosans text-sm text-gray-700"
                     >
-                      <p
-                        class="font-notosans text-xl font-medium text-gray-700 dark:text-white"
-                      >
-                        サイト名
-                      </p>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        制作期間
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">約3日</dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        ターゲット
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full bg-red-900">
+                        10～30代の男女
+                      </dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        テーマカラー
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">水色、青</dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        コンセプト
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">
+                        近隣に住んでいる方が安心して来院できる街の歯医者さん
+                      </dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        工夫点
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">
+                        清潔感と信頼感を出すために青系の色を使用しています。<br />
+                        また、冷たい雰囲気にせず親しみやすさを出すよう、写真の色味を柔らかくしたり、アイコンは丸めのものを使用しています。
+                      </dd>
+                    </dl>
+                    <div class="flex flex-col">
                       <button
-                        type="button"
-                        class="ms-auto inline-flex items-center justify-center"
-                        data-modal-hide="natural-company-modal"
+                        class="self-end bg-orange px-6 py-2 font-notosans text-sm font-medium text-white hover:opacity-70"
+                        data-modal-show="natural-company-modal"
+                        data-modal-target="natural-company-modal"
                       >
-                        <i
-                          class="i-mi-close h-8 w-8 bg-gray-500 hover:bg-gray-700"
-                        ></i>
+                        デザインを見る
                       </button>
                     </div>
-                    <div class="space-y-4 p-4 md:p-5">
-                      <img
-                        src="./public/images/web_designs/natural_company.png"
-                        alt=""
-                      />
+                  </div>
+                  <div
+                    id="natural-company-modal"
+                    tabindex="-1"
+                    class="fixed left-0 right-0 top-0 z-50 hidden h-[calc(100%-1rem)] max-h-full w-full overflow-y-auto overflow-x-hidden p-4 md:inset-0"
+                  >
+                    <div class="relative max-h-full w-full max-w-7xl">
+                      <div
+                        class="relative rounded-lg bg-white shadow dark:bg-gray-700"
+                      >
+                        <div
+                          class="flex items-center justify-between rounded-t border-b p-4 dark:border-gray-600 md:p-5"
+                        >
+                          <p
+                            class="font-notosans text-xl font-medium text-gray-700 dark:text-white"
+                          >
+                            サイト名
+                          </p>
+                          <button
+                            type="button"
+                            class="ms-auto inline-flex items-center justify-center"
+                            data-modal-hide="natural-company-modal"
+                          >
+                            <i
+                              class="i-mi-close h-8 w-8 bg-gray-500 hover:bg-gray-700"
+                            ></i>
+                          </button>
+                        </div>
+                        <div class="space-y-4 p-4 md:p-5">
+                          <img
+                            src="./public/images/web_designs/natural_company.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -500,66 +551,117 @@
               <div
                 class="m-2 rounded-lg border border-gray-200 bg-white px-4 pt-4 shadow"
               >
-                <img
-                  class="border border-silver"
-                  src="./public/images/wakaba_kindergarten_mv.png"
-                  alt=""
-                />
-                <div class="flex flex-col p-5">
-                  <h3 class="font-notosans font-bold text-gray-700">
-                    架空の幼稚園のサイト / デザイン
-                  </h3>
-                  <p
-                    class="mb-4 pt-2 font-notosans text-sm text-gray-700 dark:text-gray-400"
-                  >
-                    ・制作期間：約4日<br />
-                    ・ターゲット：子供を伸び伸びと育てる環境を探している保護者の方<br />
-                    ・テーマカラー：緑、黄緑、黄色<br />
-                    ・コンセプト：子供の自主性を大切にし、遊ぶことに力を入れている幼稚園<br />
-                    ・工夫点：サイト名に因んだ葉っぱのモチーフを取り入れたり、写真の形を工夫して、幼稚園の楽しさが伝わるようなデザインにしました。<br />
-                    幼稚園探しをしている保護者はもちろん、今子供を預けている保護者も見たくなるようにコラムや行事写真を充実させています。
-                  </p>
+                <button
+                  data-modal-show="wakaba-kindergarten-modal"
+                  data-modal-target="wakaba-kindergarten-modal"
+                >
+                  <img
+                    class="border border-silver hover:opacity-70"
+                    src="./public/images/wakaba_kindergarten_mv.png"
+                    alt=""
+                  />
+                </button>
+                <div id="ac-wakaba" data-accordion="collapse" class="p-5">
                   <button
-                    class="self-end bg-orange px-6 py-2 font-notosans text-sm font-medium text-white hover:opacity-70"
-                    data-modal-show="wakaba-kindergarten-modal"
-                    data-modal-target="wakaba-kindergarten-modal"
+                    type="button"
+                    id="ach-wakaba"
+                    class="flex w-full items-center justify-between bg-transparent font-notosans font-bold text-gray-700 hover:opacity-70"
+                    data-accordion-target="#acb-wakaba"
+                    aria-expanded="false"
+                    aria-controls="acb-wakaba"
                   >
-                    デザインを見る
+                    <div class="flex flex-col items-start lg:flex-row">
+                      <p>架空の歯科サイト</p>
+                      <p class="mx-2 hidden lg:block">/</p>
+                      <p>デザイン・コーディング</p>
+                    </div>
+                    <span class="i-mi-chevron-down h-5 w-5"></span>
                   </button>
-                </div>
-              </div>
-              <div
-                id="wakaba-kindergarten-modal"
-                tabindex="-1"
-                class="fixed left-0 right-0 top-0 z-50 hidden h-[calc(100%-1rem)] max-h-full w-full overflow-y-auto overflow-x-hidden p-4 md:inset-0"
-              >
-                <div class="relative max-h-full w-full max-w-7xl">
                   <div
-                    class="relative rounded-lg bg-white shadow dark:bg-gray-700"
+                    id="acb-wakaba"
+                    class="hidden"
+                    aria-labelledby="ach-wakaba"
                   >
-                    <div
-                      class="flex items-center justify-between rounded-t border-b p-4 dark:border-gray-600 md:p-5"
+                    <dl
+                      class="mb-4 ml-2 flex flex-wrap items-start pt-2 font-notosans text-sm text-gray-700"
                     >
-                      <p
-                        class="font-notosans text-xl font-medium text-gray-700 dark:text-white"
-                      >
-                        サイト名
-                      </p>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        制作期間
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">約3日</dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        ターゲット
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full bg-red-900">
+                        10～30代の男女
+                      </dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        テーマカラー
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">水色、青</dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        コンセプト
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">
+                        近隣に住んでいる方が安心して来院できる街の歯医者さん
+                      </dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        工夫点
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">
+                        清潔感と信頼感を出すために青系の色を使用しています。<br />
+                        また、冷たい雰囲気にせず親しみやすさを出すよう、写真の色味を柔らかくしたり、アイコンは丸めのものを使用しています。
+                      </dd>
+                    </dl>
+                    <div class="flex flex-col">
                       <button
-                        type="button"
-                        class="ms-auto inline-flex items-center justify-center"
-                        data-modal-hide="wakaba-kindergarten-modal"
+                        class="self-end bg-orange px-6 py-2 font-notosans text-sm font-medium text-white hover:opacity-70"
+                        data-modal-show="wakaba-kindergarten-modal"
+                        data-modal-target="wakaba-kindergarten-modal"
                       >
-                        <i
-                          class="i-mi-close h-8 w-8 bg-gray-500 hover:bg-gray-700"
-                        ></i>
+                        デザインを見る
                       </button>
                     </div>
-                    <div class="space-y-4 p-4 md:p-5">
-                      <img
-                        src="./public/images/web_designs/wakaba_kindergarten.png"
-                        alt=""
-                      />
+                  </div>
+                  <div
+                    id="wakaba-kindergarten-modal"
+                    tabindex="-1"
+                    class="fixed left-0 right-0 top-0 z-50 hidden h-[calc(100%-1rem)] max-h-full w-full overflow-y-auto overflow-x-hidden p-4 md:inset-0"
+                  >
+                    <div class="relative max-h-full w-full max-w-7xl">
+                      <div
+                        class="relative rounded-lg bg-white shadow dark:bg-gray-700"
+                      >
+                        <div
+                          class="flex items-center justify-between rounded-t border-b p-4 dark:border-gray-600 md:p-5"
+                        >
+                          <p
+                            class="font-notosans text-xl font-medium text-gray-700 dark:text-white"
+                          >
+                            サイト名
+                          </p>
+                          <button
+                            type="button"
+                            class="ms-auto inline-flex items-center justify-center"
+                            data-modal-hide="wakaba-kindergarten-modal"
+                          >
+                            <i
+                              class="i-mi-close h-8 w-8 bg-gray-500 hover:bg-gray-700"
+                            ></i>
+                          </button>
+                        </div>
+                        <div class="space-y-4 p-4 md:p-5">
+                          <img
+                            src="./public/images/web_designs/wakaba_kindergarten.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -569,66 +671,117 @@
               <div
                 class="m-2 rounded-lg border border-gray-200 bg-white px-4 pt-4 shadow"
               >
-                <img
-                  class="border border-silver"
-                  src="./public/images/kowaku_mv.png"
-                  alt=""
-                />
-                <div class="flex flex-col p-5">
-                  <h3 class="font-notosans font-bold text-gray-700">
-                    架空のコワーキングスペースのサイト / デザイン
-                  </h3>
-                  <p
-                    class="mb-4 pt-2 font-notosans text-sm text-gray-700 dark:text-gray-400"
-                  >
-                    ・制作期間：約8日
-                    ・ターゲット：10～30代の男女、仕事・勉強などの作業場所を探している方
-                    ・テーマカラー：黄色、青
-                    ・コンセプト：見た人が行きたくなるコワーキングスペースのサイト
-                    ・工夫点：見た人が実店舗に来店してくれることがゴールなので、楽しそうだと思ってもらえるように明るい色や形を使用して作成しました。
-                    また、コワーキングスペースの雰囲気が伝わるように大きめに写真を配置しています。
-                  </p>
+                <button
+                  data-modal-show="kowaku-modal"
+                  data-modal-target="kowaku-modal"
+                >
+                  <img
+                    class="border border-silver hover:opacity-70"
+                    src="./public/images/kowaku_mv.png"
+                    alt=""
+                  />
+                </button>
+                <div id="ac-kowaku" data-accordion="collapse" class="p-5">
                   <button
-                    class="self-end bg-orange px-6 py-2 font-notosans text-sm font-medium text-white hover:opacity-70"
-                    data-modal-show="kowaku-modal"
-                    data-modal-target="kowaku-modal"
+                    type="button"
+                    id="ach-kowaku"
+                    class="flex w-full items-center justify-between bg-transparent font-notosans font-bold text-gray-700 hover:opacity-70"
+                    data-accordion-target="#acb-kowaku"
+                    aria-expanded="false"
+                    aria-controls="acb-kowaku"
                   >
-                    デザインを見る
+                    <div class="flex flex-col items-start lg:flex-row">
+                      <p>架空の歯科サイト</p>
+                      <p class="mx-2 hidden lg:block">/</p>
+                      <p>デザイン・コーディング</p>
+                    </div>
+                    <span class="i-mi-chevron-down h-5 w-5"></span>
                   </button>
-                </div>
-              </div>
-              <div
-                id="kowaku-modal"
-                tabindex="-1"
-                class="fixed left-0 right-0 top-0 z-50 hidden h-[calc(100%-1rem)] max-h-full w-full overflow-y-auto overflow-x-hidden p-4 md:inset-0"
-              >
-                <div class="relative max-h-full w-full max-w-7xl">
                   <div
-                    class="relative rounded-lg bg-white shadow dark:bg-gray-700"
+                    id="acb-kowaku"
+                    class="hidden"
+                    aria-labelledby="ach-kowaku"
                   >
-                    <div
-                      class="flex items-center justify-between rounded-t border-b p-4 dark:border-gray-600 md:p-5"
+                    <dl
+                      class="mb-4 ml-2 flex flex-wrap items-start pt-2 font-notosans text-sm text-gray-700"
                     >
-                      <p
-                        class="font-notosans text-xl font-medium text-gray-700 dark:text-white"
-                      >
-                        サイト名
-                      </p>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        制作期間
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">約3日</dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        ターゲット
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full bg-red-900">
+                        10～30代の男女
+                      </dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        テーマカラー
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">水色、青</dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        コンセプト
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">
+                        近隣に住んでいる方が安心して来院できる街の歯医者さん
+                      </dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        工夫点
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">
+                        清潔感と信頼感を出すために青系の色を使用しています。<br />
+                        また、冷たい雰囲気にせず親しみやすさを出すよう、写真の色味を柔らかくしたり、アイコンは丸めのものを使用しています。
+                      </dd>
+                    </dl>
+                    <div class="flex flex-col">
                       <button
-                        type="button"
-                        class="ms-auto inline-flex items-center justify-center"
-                        data-modal-hide="kowaku-modal"
+                        class="self-end bg-orange px-6 py-2 font-notosans text-sm font-medium text-white hover:opacity-70"
+                        data-modal-show="kowaku-modal"
+                        data-modal-target="kowaku-modal"
                       >
-                        <i
-                          class="i-mi-close h-8 w-8 bg-gray-500 hover:bg-gray-700"
-                        ></i>
+                        デザインを見る
                       </button>
                     </div>
-                    <div class="space-y-4 p-4 md:p-5">
-                      <img
-                        src="./public/images/web_designs/kowaku.png"
-                        alt=""
-                      />
+                  </div>
+                  <div
+                    id="kowaku-modal"
+                    tabindex="-1"
+                    class="fixed left-0 right-0 top-0 z-50 hidden h-[calc(100%-1rem)] max-h-full w-full overflow-y-auto overflow-x-hidden p-4 md:inset-0"
+                  >
+                    <div class="relative max-h-full w-full max-w-7xl">
+                      <div
+                        class="relative rounded-lg bg-white shadow dark:bg-gray-700"
+                      >
+                        <div
+                          class="flex items-center justify-between rounded-t border-b p-4 dark:border-gray-600 md:p-5"
+                        >
+                          <p
+                            class="font-notosans text-xl font-medium text-gray-700 dark:text-white"
+                          >
+                            サイト名
+                          </p>
+                          <button
+                            type="button"
+                            class="ms-auto inline-flex items-center justify-center"
+                            data-modal-hide="kowaku-modal"
+                          >
+                            <i
+                              class="i-mi-close h-8 w-8 bg-gray-500 hover:bg-gray-700"
+                            ></i>
+                          </button>
+                        </div>
+                        <div class="space-y-4 p-4 md:p-5">
+                          <img
+                            src="./public/images/web_designs/kowaku.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
