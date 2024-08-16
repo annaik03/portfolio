@@ -23,7 +23,11 @@ module.exports = {
   plugins: [
     require("flowbite/plugin"),
     iconsPlugin({
-      collections: getIconCollections(["grommet-icons", "mi"]),
+      collections: getIconCollections([
+        "grommet-icons",
+        "mi",
+        "material-symbols",
+      ]),
     }),
   ],
 };

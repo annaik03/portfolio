@@ -137,13 +137,12 @@
         class="w-11/12 rounded-br-xl rounded-tr-xl bg-white py-4 pl-8 pr-8 shadow lg:w-5/6 lg:py-8 lg:pl-40 lg:pr-12"
       >
         <p class="font-jost text-3xl">Profile</p>
-        <p class="mt-4 border-b-2 pb-4 font-notosans">
+        <p class="mt-4 border-b-2 bg-red-900 pb-4 font-notosans">
           大阪にてフリーランスのWeb制作をしております。<br />
           2006年よりアルバイトにて制作を始める。<br />
           2007年から5年間大阪市内の制作会社でデザイン・コーディングなどの業務を行う。<br />
           2012年よりフリーランスへ転向。
         </p>
-        <!-- <p class="mt-4 font-notosans"> -->
         <dl class="mt-4 flex flex-wrap items-center font-notosans">
           <dt class="w-full font-bold lg:w-1/4">職種：</dt>
           <dd class="mb-2 w-full lg:mb-0 lg:w-3/4">
@@ -156,13 +155,6 @@
             Photoshop、illustrator、Adobe XD、HTML、CSS
           </dd>
         </dl>
-        <!-- <span class="font-bold">職種：　　　　　　</span>
-        WEBデザイナー（デザイン、ディレクション、軽微なコーディング）<br />
-        <span class="font-bold">得意なデザイン：　</span>
-        シンプル、きれい<br />
-        <span class="font-bold">スキル：　　　　　</span>
-        Photoshop、illustrator、Adobe XD、HTML、CSS -->
-        <!-- </p> -->
       </div>
       <!-- Profile -->
       <!-- Works -->
@@ -179,31 +171,83 @@
               <div
                 class="m-2 rounded-lg border border-gray-200 bg-white px-4 pt-4 shadow"
               >
-                <img
-                  class="border border-silver"
-                  src="./public/images/suzuki_dental_clinic_mv.png"
-                  alt=""
-                />
-                <div class="flex flex-col p-5">
-                  <h3 class="font-notosans font-bold text-gray-700">
-                    架空の歯科サイト / デザイン・コーディング
-                  </h3>
-                  <p
-                    class="mb-4 pt-2 font-notosans text-sm text-gray-700 dark:text-gray-400"
+                <a href="./dentist/index.html" target="_blank">
+                  <img
+                    class="border border-silver hover:opacity-70"
+                    src="./public/images/suzuki_dental_clinic_mv.png"
+                    alt=""
+                  />
+                </a>
+                <div id="ac-dentist" data-accordion="collapse" class="p-5">
+                  <button
+                    type="button"
+                    id="ach-dentist"
+                    class="flex w-full items-center justify-between bg-transparent font-notosans font-bold text-gray-700 hover:opacity-70"
+                    data-accordion-target="#acb-dentist"
+                    aria-expanded="false"
+                    aria-controls="acb-dentist"
                   >
-                    制作期間：約3日<br />
-                    ・テーマカラー：水色、青<br />
-                    ・コンセプト：近隣に住んでいる方が安心して来院できる街の歯医者さん<br />
-                    ・工夫点：清潔感と信頼感を出すために青系の色を使用しています。<br />
-                    また、冷たい雰囲気にせず親しみやすさを出すよう、写真の色味を柔らかくしたり、アイコンは丸めのものを使用しています。
-                  </p>
-                  <a
-                    href="./dentist/index.html"
-                    target="_blank"
-                    class="self-end bg-orange px-6 py-2 font-notosans text-sm font-medium text-white hover:opacity-70"
+                    <div class="flex flex-col items-start lg:flex-row">
+                      <p>架空の歯科サイト</p>
+                      <p class="mx-2 hidden lg:block">/</p>
+                      <p>デザイン・コーディング</p>
+                    </div>
+                    <span class="i-mi-chevron-down h-5 w-5"></span>
+                  </button>
+                  <div
+                    id="acb-dentist"
+                    class="hidden"
+                    aria-labelledby="ach-dentist"
                   >
-                    サイトを見る
-                  </a>
+                    <dl
+                      class="mb-4 ml-2 flex flex-wrap items-start pt-2 font-notosans text-sm text-gray-700"
+                    >
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        制作期間
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">約3日</dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        ターゲット
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full bg-red-900">
+                        10～30代の男女
+                      </dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        テーマカラー
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">水色、青</dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        コンセプト
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">
+                        近隣に住んでいる方が安心して来院できる街の歯医者さん
+                      </dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        工夫点
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">
+                        清潔感と信頼感を出すために青系の色を使用しています。<br />
+                        また、冷たい雰囲気にせず親しみやすさを出すよう、写真の色味を柔らかくしたり、アイコンは丸めのものを使用しています。
+                      </dd>
+                    </dl>
+                    <div class="flex flex-col">
+                      <a
+                        href="./dentist/index.html"
+                        target="_blank"
+                        class="flex items-center self-end bg-orange px-6 py-2 font-notosans text-sm font-medium text-white hover:opacity-70"
+                      >
+                        <p>サイトを見る</p>
+                        <span
+                          class="i-material-symbols-open-in-new ml-1 h-4 w-4"
+                        ></span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -211,32 +255,83 @@
               <div
                 class="m-2 rounded-lg border border-gray-200 bg-white px-4 pt-4 shadow"
               >
-                <img
-                  class="border border-silver"
-                  src="./public/images/moreish_burger_mv.png"
-                  alt=""
-                />
-                <div class="flex flex-col p-5">
-                  <h3 class="font-notosans font-bold text-gray-700">
-                    moreish burger / 仮想のハンバーガー屋のサイト
-                  </h3>
-                  <p
-                    class="mb-4 pt-2 font-notosans text-sm text-gray-700 dark:text-gray-400"
+                <a href="./moreish burger/index.html" target="_blank">
+                  <img
+                    class="border border-silver hover:opacity-70"
+                    src="./public/images/moreish_burger_mv.png"
+                    alt=""
+                  />
+                </a>
+                <div id="ac-burger" data-accordion="collapse" class="p-5">
+                  <button
+                    type="button"
+                    id="ach-burger"
+                    class="flex w-full items-center justify-between bg-transparent font-notosans font-bold text-gray-700 hover:opacity-70"
+                    data-accordion-target="#acb-burger"
+                    aria-expanded="false"
+                    aria-controls="acb-burger"
                   >
-                    ・制作期間：約1か月<br />
-                    ・ターゲット：10～30代の男女<br />
-                    ・テーマカラー：茶、赤<br />
-                    ・コンセプト：お洒落なハンバーガーショップ<br />
-                    ・工夫点：本格的なハンバーガーが売りのお店なので、提供している料理の写真が美味しそうに見えるよう心がけました。<br />
-                    線の細いイラストと癖のあるデザインフォントでレトロな雰囲気を出しています。
-                  </p>
-                  <a
-                    href="./moreish burger/index.html"
-                    target="_blank"
-                    class="self-end bg-orange px-6 py-2 font-notosans text-sm font-medium text-white hover:opacity-70"
+                    <div class="flex flex-col items-start lg:flex-row">
+                      <p>架空の歯科サイト</p>
+                      <p class="mx-2 hidden lg:block">/</p>
+                      <p>デザイン・コーディング</p>
+                    </div>
+                    <span class="i-mi-chevron-down h-5 w-5"></span>
+                  </button>
+                  <div
+                    id="acb-burger"
+                    class="hidden"
+                    aria-labelledby="ach-burger"
                   >
-                    サイトを見る
-                  </a>
+                    <dl
+                      class="mb-4 ml-2 flex flex-wrap items-start pt-2 font-notosans text-sm text-gray-700"
+                    >
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        制作期間
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">約3日</dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        ターゲット
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full bg-red-900">
+                        10～30代の男女
+                      </dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        テーマカラー
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">水色、青</dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        コンセプト
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">
+                        近隣に住んでいる方が安心して来院できる街の歯医者さん
+                      </dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        工夫点
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">
+                        清潔感と信頼感を出すために青系の色を使用しています。<br />
+                        また、冷たい雰囲気にせず親しみやすさを出すよう、写真の色味を柔らかくしたり、アイコンは丸めのものを使用しています。
+                      </dd>
+                    </dl>
+                    <div class="flex flex-col">
+                      <a
+                        href="./moreish burger/index.html"
+                        target="_blank"
+                        class="flex items-center self-end bg-orange px-6 py-2 font-notosans text-sm font-medium text-white hover:opacity-70"
+                      >
+                        <p>サイトを見る</p>
+                        <span
+                          class="i-material-symbols-open-in-new ml-1 h-4 w-4"
+                        ></span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -244,31 +339,83 @@
               <div
                 class="m-2 rounded-lg border border-gray-200 bg-white px-4 pt-4 shadow"
               >
-                <img
-                  class="border border-silver"
-                  src="./public/images/utataneshoko_mv.png"
-                  alt=""
-                />
-                <div class="flex flex-col p-5">
-                  <h3 class="font-notosans font-bold text-gray-700">
-                    架空のブックホテルサイト / デザイン・コーディング
-                  </h3>
-                  <p
-                    class="mb-4 pt-2 font-notosans text-sm text-gray-700 dark:text-gray-400"
+                <a href="./utataneshyoko/index.html" target="_blank">
+                  <img
+                    class="border border-silver hover:opacity-70"
+                    src="./public/images/utataneshoko_mv.png"
+                    alt=""
+                  />
+                </a>
+                <div id="ac-utatane" data-accordion="collapse" class="p-5">
+                  <button
+                    type="button"
+                    id="ach-utatane"
+                    class="flex w-full items-center justify-between bg-transparent font-notosans font-bold text-gray-700 hover:opacity-70"
+                    data-accordion-target="#acb-utatane"
+                    aria-expanded="false"
+                    aria-controls="acb-utatane"
                   >
-                    ・制作期間：約1か月<br />
-                    ・ターゲット：20～40代の女性 ・テーマカラー：ピンク<br />
-                    ・コンセプト：女性が泊まりやすいブックホテルのサイト<br />
-                    ・工夫点：本好きな方の目に留まるよう紙の温もりを活かし、女性向けの柔らかな色合いでまとめています。<br />
-                    ホテルのコンセプトが伝わるよう、本のモチーフを様々な場所に散りばめました。
-                  </p>
-                  <a
-                    href="./utataneshyoko/index.html"
-                    target="_blank"
-                    class="self-end bg-orange px-6 py-2 font-notosans text-sm font-medium text-white hover:opacity-70"
+                    <div class="flex flex-col items-start lg:flex-row">
+                      <p>架空の歯科サイト</p>
+                      <p class="mx-2 hidden lg:block">/</p>
+                      <p>デザイン・コーディング</p>
+                    </div>
+                    <span class="i-mi-chevron-down h-5 w-5"></span>
+                  </button>
+                  <div
+                    id="acb-utatane"
+                    class="hidden"
+                    aria-labelledby="ach-utatane"
                   >
-                    サイトを見る
-                  </a>
+                    <dl
+                      class="mb-4 ml-2 flex flex-wrap items-start pt-2 font-notosans text-sm text-gray-700"
+                    >
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        制作期間
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">約3日</dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        ターゲット
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full bg-red-900">
+                        10～30代の男女
+                      </dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        テーマカラー
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">水色、青</dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        コンセプト
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">
+                        近隣に住んでいる方が安心して来院できる街の歯医者さん
+                      </dd>
+                      <dt class="flex w-full items-center font-medium">
+                        <span class="i-mi-circle mr-1 h-2 w-2"></span>
+                        工夫点
+                      </dt>
+                      <dd class="mb-1 ml-3 w-full">
+                        清潔感と信頼感を出すために青系の色を使用しています。<br />
+                        また、冷たい雰囲気にせず親しみやすさを出すよう、写真の色味を柔らかくしたり、アイコンは丸めのものを使用しています。
+                      </dd>
+                    </dl>
+                    <div class="flex flex-col">
+                      <a
+                        href="./utataneshyoko/index.html"
+                        target="_blank"
+                        class="flex items-center self-end bg-orange px-6 py-2 font-notosans text-sm font-medium text-white hover:opacity-70"
+                      >
+                        <p>サイトを見る</p>
+                        <span
+                          class="i-material-symbols-open-in-new ml-1 h-4 w-4"
+                        ></span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
